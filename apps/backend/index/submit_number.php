@@ -3,9 +3,13 @@
     require "../../../initialize.php";
     require '../_lib/db.php';
     require '../_lib/sendmail.php';
-
+    require '../lib/mail.php';
+    
     $x = [];
 
+    $sender="john paul";
+    $content="this is a test mail";
+    
     // Check if this person was referred
     if (isset($_SESSION['referral']) && $_SESSION['referral'] !='') {
         $referral = $db->sanitize($_SESSION['referral']);

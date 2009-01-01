@@ -27,7 +27,7 @@
 	define("VERSION", "10");
 
 	define("ADMIN_EMAIL", "otwopaul@gmail.com");
-	define("ADMIN_PASSWORD","o21997ogheneminE")
+	define("ADMIN_PASSWORD","o21997ogheneminE");
 
 	// https://github.com/matthiasmullie/minify to minify files
 	// <script async src="my.js">
