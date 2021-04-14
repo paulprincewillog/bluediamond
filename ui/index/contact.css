@@ -1,0 +1,259 @@
+#contact {
+    padding-top: 10%;
+    /* background-image: url('../../_assets/images/students-of-blue-diamond-schools-warri.jpg'); */
+    /*background-image: url('../../_assets/images/blank_banner.jpg'); */
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative
+}
+
+/* #contact:after {
+    content: '';
+    width: 100%;
+    height: 150px;
+    display: block; 
+    background: linear-gradient(transparent, rgba(0,0,0,0.2), rgba(0,0,0,0.6), black);
+    position: absolute;
+    bottom: 0px
+} */
+
+    
+#contact_title {
+    width: 70%;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+}
+
+#contact_title i {
+    position: relative;
+    top: -10px;
+    left: -10px;
+}
+
+#contact_title .title_line {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#contact_title button {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    background: #673AB7;
+    color: white;
+    font-size: 30px;
+    border-radius: 50px;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: normal;
+    box-shadow: 0px 5px 20px #2b1d44;
+}
+
+
+#contact_details {
+    /* border: 1px solid #222; */
+    border-left: 0px;
+    width: 70%;
+    display: flex;    
+    margin-left: 12%;
+    margin-top: 5%;
+    align-items: flex-end
+}
+
+#contact_details > * {
+    flex: 1
+}
+
+#other_contacts > #email_header {
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    border-bottom: 0px
+}
+
+#email_header p {
+    padding-left: 20px;
+    color: #888
+}
+
+#email_header i {
+    font-size: 150%
+}
+
+#email_header span {
+    display: inline-block;
+    border-bottom: 2px solid #333;
+    margin-bottom: 5px;
+    word-break: break-all;
+    color: #fff
+}
+
+#other_contacts > div {
+    border-bottom: 2px solid #333;
+    padding: 20px 30px;
+}
+
+#other_contacts .phone_number {
+    font-size: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: bold
+}
+
+#other_contacts .phone_number a {
+    background: #0c996d;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    padding: 15px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-left: 30px;
+    box-shadow: 0px 10px 25px #000;
+}
+
+#other_contacts .phone_number a i {
+    position: relative;
+    left: -3px;
+    top: -2px;
+}
+
+
+#contact_address {
+    position: relative;
+    min-height: 600px;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+    border: 2px solid #333;
+    border-bottom: 0px;
+}
+
+#map {
+    position: absolute;
+    background:#ddd;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%
+}
+
+
+#map::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background:rgba(0,0,0,0.4);
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+
+
+#address {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+      /* margin-left: 40px; */
+    /* border-radius: 0px 0px 0px 5px; */
+    /* border: 1px solid #222; */
+    border-top: 0px;
+    border-right: 0px;
+    padding: 25px;
+    z-index: 2;
+    background: rgba(0,0,0,0.9);
+}
+
+#address i {
+    vertical-align: middle;
+}
+
+#address a {
+    display: inline-block;
+    border-bottom: 1px solid #673ab7;
+    padding-bottom: 5px
+}
+
+#other_contacts {
+    margin: 0px;
+    background: #000;
+    border: 2px solid #333;
+    border-width: 2px 2px 0px 2px;
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+    left: -20px;
+}
+
+#contact .white_space2 {
+    right: 25%;
+    top: 30%;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+
+    #contact {
+        height: fit-content
+    }
+
+    #contact_details {
+        display: block;
+        width: auto;
+        margin: 20px;
+        margin-bottom: 0px;
+    }
+
+    #contact_details > *:first-child {
+        border-right: 0px;
+    }
+
+    #contact_address {
+        height: 500px;
+        border-radius: 10px;
+    }
+
+    #other_contacts {
+        margin: 0px;
+        left: 0px;
+        margin-top: 20px;
+    }
+
+    #send_email {
+        width: 80%
+    }
+    
+    #contact > h2 {
+        margin: 70px 10px 50px 15%;
+    }
+
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    
+    #contact {
+        padding-top: 15%;
+    }
+
+    #contact_details {
+        width: 80%
+    }
+
+}

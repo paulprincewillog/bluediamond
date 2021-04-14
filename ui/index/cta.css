@@ -1,0 +1,139 @@
+#cta {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    color: #333;
+    width: 25%;
+    margin: 30px;
+    text-align: center;
+    z-index: 2;
+    display: none
+}
+
+#cta > div {
+    box-shadow: 0px 10px 25px #000;
+    border-radius: 20px 20px 0px 20px;
+    background: rgba(0,0,0,0.9);
+    color: white;
+    overflow: hidden;
+    display: none;
+    position: relative;
+    left: -60px;
+    top: -10px;
+    padding-top: 30px;
+    border: 2px solid #333
+}
+
+.current_cta {
+    display: block !important
+}
+
+#cta > #cta_image {
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    right: -5px;
+}
+
+#cta_image > img {
+    height: 55px;
+    margin-top: 30px;
+    border-radius: 50%;
+    box-shadow: 0px 10px 25px #000;
+}
+
+#cta > div p {
+    margin: 5px 15px 10px 22px;
+    line-height: 150%;
+    text-align: left;
+}
+
+#cta .cta_buttons {
+    padding: 0px 15px 15px 15px;
+    text-align: left
+}
+
+#cta .cta_buttons > button {
+    padding: 5px 15px
+}
+
+/* 
+#cta .cta_buttons > button:first-child {
+    border-right: 1px solid #666
+} */
+
+
+#cta form > * {
+    padding: 15px 30px
+}
+
+#cta form > input:first-child {
+    border-top: 2px solid #333
+}
+
+#cta form button {
+    margin: 0px
+}
+
+#cta_success {
+    text-align: left
+}
+
+#cta_success i {
+    font-size: 300%;
+    margin-left: 20px;
+}
+
+#cta_success p {
+    margin-bottom: 25px !important;
+    font-size: 13px;
+}
+
+#close_cta {
+    z-index: 1;
+    position: relative;
+    bottom: -10px;
+    right: 60px;
+    text-align: right;
+}
+
+#close_cta span {
+    display: inline-block;
+    color: #ddd;
+    font-size: 150%;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.9);
+    box-shadow: 0px 10px 25px #222;
+    cursor: pointer;
+    border: 2px solid #333
+}
+
+#close_cta span:hover {
+    box-shadow: 0px 0px 10px #222;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+
+    #cta {
+        right: -10px;
+        width: 70%;
+    }
+
+    #cta > div {
+        border: 1px solid #333;
+        background: #000;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+   
+    #cta {
+        width: 40%
+    }
+
+
+}

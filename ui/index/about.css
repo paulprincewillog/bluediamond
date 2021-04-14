@@ -1,0 +1,125 @@
+#about {
+    line-height: 200%;    
+    padding-top: 0px;
+    padding-bottom: 0px;
+    position: relative;
+}
+
+#about h2 {
+    font-size: 150%;
+    color: white
+}
+
+#about .content_for_about_us {
+    width: 60%;
+    margin: 10px 0px 70px 0px;
+}
+
+#about .content_for_about_us span {
+    border-bottom: 1px solid #666;
+    padding-bottom: 2px
+}
+
+#about .content_for_about_us span.book_tour {
+    color: #673ab7;
+    border-bottom: #673ab7 solid 1px;
+}
+
+.highlights_for_about_us {
+    width: 80%;
+    border: 0px;
+    padding: 0px;
+    margin-top: 20px;
+    flex-flow: row wrap
+}
+
+.highlights_for_about_us > div {
+    margin-right: 20px
+}
+
+.highlights_for_about_us span {
+    color: #888;
+}
+
+.highlights_for_about_us p {
+    font-size: 150%;
+    font-weight: bold;
+    margin: 5px 0px 0px 0px;
+}
+
+.highlights_for_about_us section {
+    flex: 1 0 100%;
+    display: flex;
+    margin-top: 15px;
+    border-top: 2px solid #333;
+    padding-top: 15px;
+}
+
+.highlights_for_about_us section > div {
+    flex: 1
+}
+
+.highlights_for_about_us section div > p {
+    font-size: 130%
+}
+
+.highlights_for_about_us [name='classes'] > p {
+    font-size: 150%
+}
+
+.continue_scrolling {
+    color: #666;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 10%;
+    top: 20%;
+}
+
+.continue_scrolling::after {
+    display: block;
+    content: "";
+    width: 100px;
+    height: 2px;
+    margin-left: 20px;
+    position: relative;
+    background: #333;
+    position: absolute;
+    top: 14px;
+    
+	/* -webkit-animation: gif_right 1s infinite alternate;
+	animation: gif_right 1s infinite alternate; */
+}
+
+
+.continue_scrolling::after {
+    display: block;
+    content: "";
+    width: 100px;
+    height: 2px;
+    margin-left: 20px;
+    position: relative;
+    background: #333;
+    position: absolute;
+    top: 14px;
+}
+
+.white_space2 {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+}
+
+.white_space2 > div {
+    height: 100px;
+    width: 2px;
+    margin-bottom: 10px
+}
+
+.white_space2 > div.grey_line {
+    background: #333
+}
+
+.white_space2 > div.coloured_line {
+    background: #2b1d44;
+    height: 40px
+}

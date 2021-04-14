@@ -1,0 +1,107 @@
+#testimonial_container h2 {
+    margin: 70px 10%;
+    margin-bottom: 30px;
+    font-size: 200%;
+    line-height: 130%;
+    color: #ddd;
+}
+
+#testimonial {
+    display: flex;
+    margin: 0px 10%;
+    margin-bottom: 0px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #333;
+    border-radius: 10px;
+    width: 60%;
+}
+
+#testimonial .testimonial_image {
+    width: 100%
+}
+
+#testimonial > div {
+    flex: 1;
+    background: black
+}
+
+#testimonial > div:first-child {
+    border-right: 2px solid #333;
+}
+
+p.caption {
+    padding: 0px 30px;
+    position: relative;
+    top: -70px;
+    margin-bottom: -50px;
+}
+
+div.author {
+    margin-top: 0px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    color: #ccc;
+    display: flex;
+}
+
+div.author .line {
+    top: 12px;
+    position: relative;
+    margin-right: 10px;
+    width: 20px;
+}
+
+div.author span {
+    display: block;
+    color: #888;
+    margin-top: -3px;
+}
+
+div.author p {
+    margin: 0px;
+}
+
+.blinking_circle {
+    position: relative;
+    width: 60%;
+    height: 150px;
+    top: 120px;
+    right: -140px;
+    margin-top: -150px;
+}
+
+.blinking_circle::before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0px;
+    background: #2b1d44;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.blinking_circle::after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    background-color: #2b1d44;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    opacity: 0;
+    right: 0px;
+    animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
+}
+
+@keyframes scaleIn {
+    from {
+      transform: scale(.5, .5);
+      opacity: .5;
+    }
+    to {
+      transform: scale(2.5, 2.5);
+      opacity: 0;
+    }
+}

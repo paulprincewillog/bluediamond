@@ -1,0 +1,76 @@
+#link_button, #share_link {
+    display: none
+}
+
+#share_link > p {
+    width: 50%;
+    font-size: 130%;
+    line-height: 150%;
+    margin-left: 10px;
+    color: #ccc;
+}
+
+#link_button > a {
+    border: 2px solid #333;
+    border-radius: 5px;
+    width: 50%;
+    padding-left: 30px;
+    background: #111;
+}
+
+#link_button > a:hover {
+    box-shadow: 0px 0px 10px #222
+}
+
+#link_form {
+    display: flex;
+    width: 65%;
+    border: 2px solid #333;
+    border-radius: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#link_form input {
+    border-bottom: 0px;
+    flex: 1;
+    padding-right: 0px;
+    padding-left: 20px
+}
+
+#link_form button {
+    margin-right: 20px;
+}
+
+#share_link button img {
+
+    vertical-align: middle;
+    margin-right: 7px;
+    position: relative;
+    top: -1px;
+    
+}
+
+#share_link button {
+    background: #673AB7
+}
+
+#share_link a > button {
+    /* background: #092943 */
+    background: #333
+}
+
+#copied_message p {
+    color: #666;
+    margin-left: 20px;
+    width: 60%;
+    margin-bottom: 20px;
+    display: none
+}
+
+@media only screen and (min-width: 0px) and (max-width: 700px) {
+        
+    #link_form {
+        display: block;
+    }
+}

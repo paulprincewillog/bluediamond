@@ -1,0 +1,25 @@
+Options +FollowSymLinks
+
+RewriteEngine on
+
+# RewriteRule ^(.+)/(ui|_assets|apps)/(.*)$ $2/$3 [L]
+
+RewriteRule ^app/(.*)/(.*)$ apps/backend/$1/$2.php [L]
+
+RewriteRule ^store/(.*)/(ui|_assets|apps)/(.*)/?$ website/$2/$3 [NC,L]
+RewriteRule ^store/(.*)/app/(.*)/(.*)$ website/apps/backend/$2/$3.php [NC,L]
+
+RewriteRule ^store/(.*)/(.*)/?$ website/$2?store=$1 [NC,L,QSA]
+RewriteRule ^store/(.*)$ /amara/store/$1/ [L,R=301]
+RewriteRule ^store/(.*)/?$ website/index?user=$1 [NC,L]
+RewriteRule ^store/?$ website/index [NC,L]
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/?$ pages/$1.php [NC,L]
+
+RewriteRule ^index.php pages/index.php [NC,L]
+RewriteRule ^$ pages/index.php [NC,L]
+
+# ErrorDocument 404 http://localhost/dodo/404page.php

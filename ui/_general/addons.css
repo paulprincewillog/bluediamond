@@ -1,0 +1,11 @@
+.padding10 {
+    padding: 10%
+}
+
+.flexbox {
+    display: flex
+}
+
+.flexbox > * {
+    flex: 1
+}

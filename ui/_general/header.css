@@ -1,0 +1,116 @@
+#header {
+    position: relative;
+    bottom: -160px;
+    z-index: 2;
+    margin-top: -160px;
+}
+
+#main_header {
+    display: flex;
+    align-items: center; 
+    padding:  30px 10%;
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.5), transparent);
+    position: relative
+}
+  
+#main_header > div:first-child {
+    flex: none;
+}
+ 
+#main_header > div:last-child {
+    flex: 2;
+}
+
+#logo > img {
+    height: 65px
+}
+
+#main_links {
+    text-align: right;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+}
+
+#main_links > a:first-child {
+    margin: 20px;
+    color: white;
+    font-size: 120%;
+    border-bottom: 2px solid #666;
+    padding-bottom: 7px;
+}
+
+/* #main_links > *:last-child {
+    
+    background: #1368ac;
+    border:0px;
+    border-radius: 50px;
+    padding: 5px 25px;
+    margin-left: 45px;
+    font-size: 90%;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 10px 25px #000
+} */
+
+#main_links > a:last-child:hover {
+    box-shadow: 0px 0px 10px #000
+}
+
+#main_links i {
+    padding: 5px;
+    margin-left: -5px;
+}
+
+#main_links .icon {
+    width: 20px;
+    margin: 5px;
+}
+
+
+.whatsapp_button > button {
+    background: #333;
+}
+
+.whatsapp_button > button img {
+
+    vertical-align: middle;
+    margin-left: 10px;
+    position: relative;
+    top: -1px;
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 0px) and (max-width: 700px) {
+
+    #main_header {
+        display: block;
+        padding: 20px;
+        border-bottom: 2px solid #333;
+        padding-left: 10%
+    }
+
+    #logo {
+        padding: 0px
+    }
+
+    #main_links {
+        
+        padding: 0px;
+        flex-flow: row wrap;
+        justify-content: initial;
+        text-align: left
+    }
+
+    #main_links > a:first-child {
+        margin-left: 5px;
+    }
+
+    #main_links > *:last-child {
+        margin: 0px
+    }
+}
+

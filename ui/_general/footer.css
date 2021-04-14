@@ -1,0 +1,33 @@
+footer {
+    padding: 20px 5% 30px 5%;
+    border-top: 2px solid #333;
+}
+
+footer > * {
+    padding: 10px 0px;
+    margin: 0px 30px;
+    display: inline-block;
+    color: #999;
+}
+
+footer > a {
+    border-bottom: 2px solid #333;
+    color: #999;
+}
+
+footer img {
+    height: 13px;
+    margin: 0px 5px 3px 5px;
+    vertical-align: middle;
+}
+
+footer > p {
+    display: inline-block;
+    margin-left: 40px;
+    font-size: 13px;
+    margin-top: 20px
+}
+
+footer > p > span {
+    margin: 5px
+}
