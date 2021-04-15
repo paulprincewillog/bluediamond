@@ -30,14 +30,14 @@
             <div class="phone_number">
                 <p> 0708 589 8670 </p> 
                 <a href="tel: 07085898670">
-                  <i class="icon pe-7s-call"></i> <span> call </span> 
+                  <i class="icon pe-7s-call"></i> <span> Call </span> 
                 </a> 
             </div>
 
             <div class="phone_number">
-                <p> 0703 578 129 </p> 
+                <p> 0703 578 9129 </p> 
                 <a href="tel: 0703578129">
-                   <i class="icon pe-7s-call"></i>  <span> call </span>  
+                   <i class="icon pe-7s-call"></i>  <span> Call </span>  
                 </a> 
             </div>
 

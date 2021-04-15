@@ -8,9 +8,7 @@
     overflow: hidden;
     position: relative
 }
-#specifications div{
-    margin-bottom: 25px;
-}
+
 /* #contact:after {
     content: '';
     width: 100%;
@@ -115,19 +113,22 @@
     color: white;
     font-weight: bold;
     display: inline-block;
-    padding: 15px 8px;
+    padding: 10px 15px;
     width: 90px;
     height: 15px;
-    border-radius: 20px;
+    border-radius: 50px;
     margin-left: 30px;
     box-shadow: 0px 10px 25px #000;
 }
+
 #other_contacts .phone_number span{
     position: relative;
-    top:-3px;
-    color: white;  
+    left: -7px;
+    top: -2px;
+    font-size: 14px; 
     
 } 
+
 #other_contacts .phone_number a i {
     position: relative;
     left: -2px;

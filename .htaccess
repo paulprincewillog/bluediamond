@@ -22,4 +22,8 @@ RewriteRule ^(.*)/?$ pages/$1.php [NC,L]
 RewriteRule ^index.php pages/index.php [NC,L]
 RewriteRule ^$ pages/index.php [NC,L]
 
-# ErrorDocument 404 http://localhost/dodo/404page.php
+<ifmodule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
+</ifmodule>
+
+ErrorDocument 404 https://bluediamond.com.ng/404.php

@@ -24,7 +24,7 @@
     </div>
 
     <div id="cta_facebook">
-        <p> We noticed that you clicked on our link from <u>Facebook</u> . After you must have gone through our website, would you contact you to discuss more? </p>
+        <p> We noticed that you clicked on our link from Facebook . After you must have gone through our website, would you contact you to discuss more? </p>
         <div class="cta_buttons">
             <button onclick="cta_form('continue')"> Yes </button>
             <button onclick="cta('no')"> No </button>

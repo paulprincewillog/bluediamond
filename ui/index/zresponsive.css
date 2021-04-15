@@ -70,6 +70,10 @@
     .highlights_for_about_us section {
         display: block
     }
+
+    #specifications div{
+        margin-bottom: 25px;
+    }
     
 }
 
