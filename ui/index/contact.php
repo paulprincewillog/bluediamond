@@ -20,7 +20,7 @@
                 <a href="https://goo.gl/maps/gCGzJaTsvk7Xo5Vb8"> View full map <i class="icon pe-7s-angle-right"> </i></a>
             </div>
             <div id="map">
-                <iframe title="location"src="" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy" id="iframe_map"></iframe>
+                <iframe title="location" src="" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy" id="iframe_map"></iframe>
             </div>
 
         </section>
