@@ -3,7 +3,7 @@
     
     <h3 id="contact_title">
         <span class="title_line"> Contact us  </span>
-        <button> <i class="pe-7s-angle-down"></i> </button>
+        <span class="down_pointer"> <i class="pe-7s-angle-down"></i> </span>
     </h3>
 
     <div class="white_space2">
@@ -20,7 +20,7 @@
                 <a href="https://goo.gl/maps/gCGzJaTsvk7Xo5Vb8"> View full map <i class="icon pe-7s-angle-right"> </i></a>
             </div>
             <div id="map">
-                <iframe src="" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy" id="iframe_map"></iframe>
+                <iframe title="location"src="" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy" id="iframe_map"></iframe>
             </div>
 
         </section>
@@ -30,19 +30,19 @@
             <div class="phone_number">
                 <p> 0708 589 8670 </p> 
                 <a href="tel: 07085898670">
-                    <i class="icon pe-7s-call"></i>
+                  <i class="icon pe-7s-call"></i> <span> call </span> 
                 </a> 
             </div>
 
             <div class="phone_number">
                 <p> 0703 578 129 </p> 
                 <a href="tel: 0703578129">
-                    <i class="icon pe-7s-call"></i>
+                   <i class="icon pe-7s-call"></i>  <span> call </span>  
                 </a> 
             </div>
 
             <div>
-                <a href="https://wa.me/2348028676295?text=I am messaging from Blue Diamond school and I want to ... " class="whatsapp_button"> <button title="Click to message on WhatsApp"> Message on WhatsApp <img src="_assets/icons/whatsapp.svg" width="14" alt="WhatsApp logo"> </button> </a>
+                <a href="https://wa.me/2347085898670?text=I am messaging from Blue Diamond school and I want to ... " class="whatsapp_button"> <button title="Click to message on WhatsApp"> Message on WhatsApp <img src="_assets/icons/whatsapp.svg" width="14" alt="WhatsApp logo"> </button> </a>
             </div>
             
             <div id="email_header"> 

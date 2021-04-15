@@ -20,7 +20,7 @@
                 <p> Creche, Nursery, Primary and Secondary classes </p> 
             </div>
 
-            <section>
+            <section id="specifications">
 
                 <div>
                     <p> Nigerian/Cambridge blended  </p> 

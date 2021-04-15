@@ -2,7 +2,7 @@
     
     <h3 id="contact_title">
         <span class="title_line"> Contact us  </span>
-        <button class="arrow"> <i class="pe-7s-angle-down"></i> </button>
+        <span class="arrow" ><i class="pe-7s-angle-down"></i> </span>
     </h3>
 
     <div id="contact_details">

@@ -21,10 +21,12 @@
 }
 
 #about .content_for_about_us span.book_tour {
-    color: #673ab7;
+    color: #daceef;
     border-bottom: #673ab7 solid 1px;
 }
-
+.book_tour:hover{
+    cursor:pointer;
+}
 .highlights_for_about_us {
     width: 80%;
     border: 0px;

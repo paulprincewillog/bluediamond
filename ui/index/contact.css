@@ -8,7 +8,9 @@
     overflow: hidden;
     position: relative
 }
-
+#specifications div{
+    margin-bottom: 25px;
+}
 /* #contact:after {
     content: '';
     width: 100%;
@@ -42,9 +44,9 @@
     margin-left: 10px;
 }
 
-#contact_title button {
-    width: 30px;
-    height: 30px;
+.down_pointer {
+    width: 10px;
+    height: 10px;
     padding: 10px;
     background: #673AB7;
     color: white;
@@ -109,22 +111,27 @@
 }
 
 #other_contacts .phone_number a {
-    background: #0c996d;
+    background: #097956;
     color: white;
     font-weight: bold;
     display: inline-block;
-    padding: 15px;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
+    padding: 15px 8px;
+    width: 90px;
+    height: 15px;
+    border-radius: 20px;
     margin-left: 30px;
     box-shadow: 0px 10px 25px #000;
 }
-
+#other_contacts .phone_number span{
+    position: relative;
+    top:-3px;
+    color: white;  
+    
+} 
 #other_contacts .phone_number a i {
     position: relative;
-    left: -3px;
-    top: -2px;
+    left: -2px;
+    top:2px;
 }
 
 

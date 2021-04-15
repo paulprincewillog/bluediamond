@@ -56,7 +56,9 @@
 #cta .cta_buttons > button {
     padding: 5px 15px
 }
-
+#cta_schedule p{
+    color:white;
+}
 /* 
 #cta .cta_buttons > button:first-child {
     border-right: 1px solid #666
