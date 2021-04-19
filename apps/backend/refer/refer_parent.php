@@ -57,7 +57,7 @@
             if ($db->isSuccessful) {
                 
                 $x['dd_success'] = true;
-                $x['dd_feedback'] = "Submission successful";
+                $x['fullname'] = $title. ' '.$full_name;
 
             } else {
                 $x['dd_success'] = false;

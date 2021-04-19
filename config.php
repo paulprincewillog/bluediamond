@@ -10,8 +10,8 @@
 	define("GENERAL_TITLE", "Blue Diamond Schools Effurun");
 	
 	// Define URL
-	define("ROOT_PATH", "blue/");
-	define("ROOT_URL", "http://localhost/blue/");
+	define("ROOT_PATH", "bluediamond/");
+	define("ROOT_URL", "http://localhost/bluediamond/");
 
 	define("BACKEND", "apps/backend/");	
 	define("FRONTEND", "apps/frontend/");

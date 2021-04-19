@@ -142,8 +142,6 @@
   #top_description h1, #top_description [name='caption'], #top_description [name='actions'], .forms > p, .forms form, #share_link > p, #link_button > a, #link_form, #copied_message p {
     width: 70% !Important;
   }
-}.forms {
-    display: none;
 }
 
 .forms form {
@@ -209,9 +207,17 @@
     top: -1px;
 }
 
+#refer_parent {
+    display: none;
+}
+
 #refer_parent form > div:first-child {
     border-top: 0px;
     border-bottom: 2px solid #333;
+}
+
+#refer_parent > [name='refer_successful'] {
+    display: none;
 }
 
 .forms [dd_feedback] {
@@ -328,7 +334,7 @@
 @media only screen and (min-width: 0px) and (max-width: 700px) {
         
     #link_form {
-        display: flex;
+        display: block;
     }
 }main > section {
     padding: 10%;

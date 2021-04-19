@@ -25,7 +25,7 @@
 </section>
 
 
-<section id="back_refer" class="bottom_back_link" onclick="back_refer()">
+<!-- <section id="back_refer" class="bottom_back_link" onclick="back_refer()">
     <i class="pe-7s-angle-left"></i> 
     <button> Want to refer someone in particular? </button>
-</section>
+</section> -->
