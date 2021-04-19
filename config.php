@@ -26,4 +26,5 @@
 	// Define version
 	define("VERSION", "10");
 
-			
+	// https://github.com/matthiasmullie/minify to minify files
+	// <script async src="my.js">

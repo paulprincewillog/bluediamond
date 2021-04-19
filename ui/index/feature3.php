@@ -1,7 +1,7 @@
 <div class="features" id="feature3">
 
     <div class="feature_image">
-        <img src="_assets/images/students-of-blue-diamond-schools-warri-3.jpg"  loading="lazy" alt="Creche facility at blue diamond schools Effurun">
+        <img src="_assets/images/creche-facilities-in-effurun.jpg"  loading="lazy" alt="Creche facility at blue diamond schools Effurun">
     </div>
 
     <div class="each_feature">

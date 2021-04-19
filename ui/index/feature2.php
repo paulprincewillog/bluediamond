@@ -1,7 +1,7 @@
 <div class="features" id="feature2">
 
     <div class="feature_image">
-        <img src="_assets/images/students-of-blue-diamond-schools-warri-4.jpg"  loading="lazy" alt="Student of blue diamond schools Effurun">
+        <img src="_assets/images/child-from-blue-diamond-schools.jpg" loading="lazy" alt="Students of blue diamond schools Effurun">
     </div>
 
     <div class="each_feature">

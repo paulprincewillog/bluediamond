@@ -1,6 +1,6 @@
 #contact {
     padding-top: 10%;
-    background-image: url('../../_assets/images/students-of-blue-diamond-schools-warri.jpg');
+    /* background-image: url('../../_assets/images/students-of-blue-diamond-schools-warri.jpg'); */
     /*background-image: url('../../_assets/images/blank_banner.jpg'); */
     background-size: cover;
     background-position: bottom;
@@ -42,9 +42,9 @@
     margin-left: 10px;
 }
 
-#contact_title button {
-    width: 30px;
-    height: 30px;
+.down_pointer {
+    width: 10px;
+    height: 10px;
     padding: 10px;
     background: #673AB7;
     color: white;
@@ -58,23 +58,26 @@
 
 
 #contact_details {
-    border: 2px solid #333;
-    border-bottom: 0px;
-    border-radius: 20px 20px 0px 0px;
-    width: 70%;
+    border-left: 0px;
+    /* width: 70%; */
     display: flex;
-    background: rgba(0,0,0,0.8);
-    margin: auto
+    margin-left: 12%;
+    margin-top: 5%;
+    /* margin-right: 5%; */
+    align-items: flex-end;
+    margin-right: 13%;
 }
 
 #contact_details > * {
     flex: 1
 }
 
-#contact_details > *:first-child {
-    border-right: 2px solid #333;
+#other_contacts > #email_header {
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    border-bottom: 0px
 }
-
 
 
 #email_header {
@@ -106,47 +109,70 @@
     color: white
 }
 
+#send_email {
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+    border: 2px solid #333;
+    border-bottom: 0px;
+}
+
 #send_email button {
     margin-top: 20px;
     z-index: 2;
     position: relative;
 }
+
 #send_email button i {
     margin-left: 20px;
 }
 
-#phone_number {
+#other_contacts > div {
     border-bottom: 2px solid #333;
     padding: 20px 30px;
+}
+
+#other_contacts .phone_number {
     font-size: 130%;
     display: flex;
     align-items: center;
     text-align: center;
+    font-weight: bold
 }
 
-#phone_number a {
-    background: #0c996d;
+#other_contacts .phone_number a {
+    background: #097956;
     color: white;
     font-weight: bold;
     display: inline-block;
-    padding: 15px;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
+    padding: 10px 15px;
+    width: 90px;
+    height: 15px;
+    border-radius: 50px;
     margin-left: 30px;
     box-shadow: 0px 10px 25px #000;
 }
 
-#phone_number a i {
+#other_contacts .phone_number span{
     position: relative;
-    left: -3px;
+    left: -7px;
     top: -2px;
+    font-size: 14px; 
+    
+} 
+
+#other_contacts .phone_number a i {
+    position: relative;
+    left: -2px;
+    top:2px;
 }
 
 
 #contact_address {
     position: relative;
-    height: 100%
+    min-height: 600px;
+    overflow: hidden;
+    border-top: 2px solid #333;
+    border-bottom: 0px;
 }
 
 #map {
@@ -161,7 +187,7 @@
 }
 
 
-#map::after {
+/* #map::after {
     content: "";
     display: block;
     position: absolute;
@@ -174,7 +200,7 @@
     width: 100%;
     cursor: pointer;
     pointer-events: none;
-}
+} */
 
 
 
@@ -183,43 +209,67 @@
     top: 0px;
     right: 0px;
     left: 0px;
-      /* margin-left: 40px; */
-    /* border-radius: 0px 0px 0px 5px; */
-    /* border: 1px solid #222; */
+    /* margin-left: 40px; */
+    border-radius: 0px 0px 10px 10px;
+    border: 2px solid #666666;
     border-top: 0px;
-    border-right: 0px;
-    padding: 25px;
+    /* border-right: 0px; */
+    padding: 15px 25px;
     z-index: 2;
-    background: rgba(0,0,0,0.9)
+    background: rgba(0,0,0,0.9);
+    margin-left: 12%;
+    /* width: 70%; */
+    margin-right: 13%;
+}
+
+#address small {
+    color: #888
 }
 
 #address i {
     vertical-align: middle;
 }
 
+#address p {
+    margin: 0px;
+    font-size: 130%;
+    line-height: 130%;
+    margin-bottom: 5px;
+}
+
 #address a {
     display: inline-block;
-    border-bottom: 2px solid #673ab7;
+    border-bottom: 1px solid #261d35;
     padding-bottom: 5px
+}
+
+#other_contacts {
+    margin: 0px;
+    background: #000;
+    border: 2px solid #333;
+    border-width: 2px 2px 0px 2px;
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+    left: -20px;
+    margin-right: -20px
+}
+
+#contact .white_space2 {
+    right: 25%;
+    top: 30%;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
 
     #contact {
-        padding-top: 70px;
-        background-image: url('../../_assets/images/students-of-blue-diamond-schools-warri-1-mobile.jpg');
         height: fit-content
     }
 
-    #contact_title {
-        width: 95%;
-        margin-left: 70px;
-    }
-    
     #contact_details {
         display: block;
-        margin-top: 50px;
-        width: 95%
+        width: auto;
+        margin: 20px;
+        margin-bottom: 0px;
     }
 
     #contact_details > *:first-child {
@@ -228,7 +278,23 @@
 
     #contact_address {
         height: 500px;
+        border-radius: 10px;
     }
+
+    #other_contacts {
+        margin: 0px;
+        left: 0px;
+        margin-top: 20px;
+    }
+
+    #send_email {
+        width: 80%
+    }
+    
+    #contact > h2 {
+        margin: 70px 10px 50px 15%;
+    }
+
 }
 
 
@@ -242,4 +308,5 @@
     #contact_details {
         width: 80%
     }
+
 }

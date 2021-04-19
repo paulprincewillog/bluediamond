@@ -18,7 +18,7 @@
 		// Function for sanitizing data
 		public function sanitize($data) {
 			
-			global $db;
+			// global $db;
 			
 			// This one trims it of all spaces
 			$data = trim($data);
@@ -34,7 +34,7 @@
 			
 			
 			// This one removes quotes and other thing that will cause database malfunction
-			$data = mysqli_real_escape_string($db->conn, $data);
+			// $data = mysqli_real_escape_string($db->conn, $data);
 
 			// Finally, the data is returned
 			return $data;
