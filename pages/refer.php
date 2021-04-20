@@ -9,7 +9,8 @@
 	loadHeader("main");
 	loadUI("description");
 	loadUI("submit_details");
-	loadUI("refer_parent");
-	loadUI("refer_successful");
+	
+	// loadUI("refer_successful");
 	loadUI("share_link");
+	loadUI("refer_parent");
 	loadFooter("main");

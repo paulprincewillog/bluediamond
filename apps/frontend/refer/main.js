@@ -141,21 +141,23 @@ dd_submit({
         
         create_referral_link();
 
-        var where_next = dd("[name='where_next']").val(); // Get where to go after submitting form
+        // var where_next = dd("[name='where_next']").val(); // Get where to go after submitting form
         dd("#submit_details").fadeOut(400); // Remove form
     
         setTimeout(() => {
-            if (where_next == "refer") { 
+            // if (where_next == "refer") { 
 
-                dd("#refer_parent").fadeIn(400);
-                dd("#link_button").fadeIn(400);
+            //     dd("#refer_parent").fadeIn(400);
+            //     dd("#link_button").fadeIn(400);
 
-            } else {
+            // } else {
                 
                 // Show referral link by default
                 dd("#share_link").fadeIn(400);
-                dd("#back_refer").fadeIn(400);
-            }
+                dd("#refer_parent").fadeIn(400);
+
+                // dd("#back_refer").fadeIn(400);
+            //}
 
         }, 600);
 
@@ -169,6 +171,19 @@ dd_submit({
     target: '#refer_parent > form',
     url: 'app/refer/refer_parent',
     callback: function() {
-        refer_successful();
+
+        var title = dd("#refer_parent [name='title']").val();
+        var full_name = dd("#refer_parent [name='full_name']").val();
+
+        dd("#refer_parent > p").hide();
+        dd("#refer_parent > [name='refer_successful']").hide();
+        dd("#refer_parent > p").select().scrollIntoView();
+
+        setTimeout(() => {
+            dd("#refer_parent > [name='refer_successful'] span").html(title+' '+full_name);
+            dd("#refer_parent > [name='refer_successful']").fadeIn(1000);
+        }, 500);
+        // document.querySelector("#refer_parent > p").innerHTML = "content";
+        //refer_successful();
     }
 });

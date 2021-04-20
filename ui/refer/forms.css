@@ -1,6 +1,4 @@
-.forms {
-    display: none;
-}
+
 
 .forms form {
     border: 2px solid #333;
@@ -65,9 +63,17 @@
     top: -1px;
 }
 
+#refer_parent {
+    display: none;
+}
+
 #refer_parent form > div:first-child {
     border-top: 0px;
     border-bottom: 2px solid #333;
+}
+
+#refer_parent > [name='refer_successful'] {
+    display: none;
 }
 
 .forms [dd_feedback] {

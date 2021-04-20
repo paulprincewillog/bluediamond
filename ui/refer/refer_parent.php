@@ -1,7 +1,8 @@
 <section id="refer_parent" class="forms">
 
-    <p> Type the details of the person you want to refer below <i class="pe-7s-angle-down arrow"></i> </p>
-
+    <p> Type the details of someone you want to refer below <i class="pe-7s-angle-down arrow"></i> </p>
+    <p name="refer_successful">  <i class="pe-7s-check"></i> <span></span>'s nubmer was received. You can continue adding more persons below</p>
+    
     <form>
 
         <div>

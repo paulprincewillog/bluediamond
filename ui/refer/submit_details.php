@@ -1,6 +1,6 @@
 <section id="submit_details" class="forms">
 
-    <p> First, give us your details so we can save who you referred with it <i class="pe-7s-angle-down arrow"></i> </p>
+    <p>Fill in your details below to generate your referal link<i class="pe-7s-angle-down arrow"></i> </p>
 
     <form>
 
