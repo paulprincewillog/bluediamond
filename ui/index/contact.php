@@ -41,8 +41,14 @@
                 </a> 
             </div>
 
-            <div>
-                <a href="https://wa.me/2347085898670?text=I am messaging from Blue Diamond school and I want to ... " class="whatsapp_button"> <button title="Click to message on WhatsApp"> Message on WhatsApp <img src="_assets/icons/whatsapp.svg" width="14" alt="WhatsApp logo"> </button> </a>
+            <div class="social_media">
+
+                <a href="https://web.facebook.com/Blue-Diamond-Schools-100163038732037/"> <i class="icon-facebook"></i> Facebook </a>
+                <a href="https://wa.me/2348028676295?text=I am messaging from Blue Diamond school and I want to ... "> <i class="icon-whatsapp"></i> WhatsApp </a>
+                <a href="https://www.instagram.com/p/CKL17c9FXGK/?igshid=1b2rg03061iwx"> <i class="icon-instagram"></i> Instagram </a>
+
+                <div class="fb-like" data-href="https://web.facebook.com/Blue-Diamond-Schools-100163038732037/" data-width="200" data-layout="standard" data-action="like" data-size="small" data-share="false" data-colorscheme="dark"></div>
+
             </div>
             
             <div id="email_header"> 
@@ -50,16 +56,7 @@
                 <p> Reach us through <span> contact@bluediamond.com.ng</span>   </p>
             </div>
             
-        <!--script from facebook-->
-        <div id="facebook_like">
-        <div id="fb-root"></div>
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0" nonce="XF76SukP"></script>
-       
-        <div class="fb-like" data-colorscheme="dark" data-href="https://web.facebook.com/Blue-Diamond-Schools-100163038732037/" data-width="" data-layout="standard" data-action="like" data-size="small"></div>
-
-        </div>
         </section>
-        <!--end of script from facebook-->
     </div>
 
 

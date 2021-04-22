@@ -1,9 +1,7 @@
 #contact {
     padding-top: 10%;
-    /* background-image: url('../../_assets/images/students-of-blue-diamond-schools-warri.jpg'); */
-    /*background-image: url('../../_assets/images/blank_banner.jpg'); */
-    background-size: cover;
-    background-position: bottom;
+    background-image: url('../../_assets/images/students-of-blue-diamond-schools-warri.jpg');
+    background-size: auto;
     background-repeat: no-repeat;
     overflow: hidden;
     position: relative
@@ -40,6 +38,8 @@
     color: #fff;
     display: inline-block;
     margin-left: 10px;
+    margin-right: 20px
+
 }
 
 .down_pointer {
@@ -96,7 +96,6 @@
 
 #email_header span {
     display: inline-block;
-    border-bottom: 2px solid #333;
     padding: 2px
 }
 
@@ -116,6 +115,7 @@
     overflow: hidden;
     border: 2px solid #333;
     border-bottom: 0px;
+    background: rgba(0,0,0,0.9)
 }
 
 #send_email button {
@@ -130,7 +130,7 @@
 
 #other_contacts > div {
     border-bottom: 2px solid #333;
-    padding: 20px 30px;
+    padding: 10px 30px;
 }
 
 #other_contacts .phone_number {
@@ -138,7 +138,12 @@
     display: flex;
     align-items: center;
     text-align: center;
-    font-weight: bold
+    font-weight: bold;
+}
+
+.phone_number p {
+    font-weight: bold;
+    color: #ddd;
 }
 
 #other_contacts .phone_number a {
@@ -146,26 +151,27 @@
     color: white;
     font-weight: bold;
     display: inline-block;
-    padding: 10px 15px;
-    width: 90px;
-    height: 15px;
+    padding: 6px 10px 3px 23px;
     border-radius: 50px;
     margin-left: 30px;
     box-shadow: 0px 10px 25px #000;
 }
 
-#other_contacts .phone_number span{
+#other_contacts .phone_number span {
     position: relative;
     left: -7px;
     top: -2px;
-    font-size: 14px; 
-    
-} 
+    font-size: 14px;
+}
 
 #other_contacts .phone_number a i {
     position: relative;
-    left: -2px;
-    top:2px;
+    left: -8px;
+    top: -2px;
+    font-size: 60%;
+    background: #0b523c;
+    padding: 4px;
+    border-radius: 50%;
 }
 
 
@@ -261,54 +267,31 @@
     top: 30%;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 767px) {
 
-    #contact {
-        height: fit-content
-    }
 
-    #contact_details {
-        display: block;
-        width: auto;
-        margin: 20px;
-        margin-bottom: 0px;
-    }
-
-    #contact_details > *:first-child {
-        border-right: 0px;
-    }
-
-    #contact_address {
-        height: 500px;
-        border-radius: 10px;
-    }
-
-    #other_contacts {
-        margin: 0px;
-        left: 0px;
-        margin-top: 20px;
-    }
-
-    #send_email {
-        width: 80%
-    }
-    
-    #contact > h2 {
-        margin: 70px 10px 50px 15%;
-    }
-
+.social_media > * {
+    padding: 5px 0px;
+    margin: 0px 10px;
+    display: inline-block;
+    color: #999;
 }
 
+.social_media > a {
+    border-bottom: 2px solid #333;
+    color: #999;;
+    margin-bottom: 10px;
+}
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-    
-    #contact {
-        padding-top: 15%;
-    }
+.social_media i {
+    height: 13px;
+    width: 13px;
+    margin: 0px 5px 3px 5px;
+    vertical-align: middle;
+    position: relative;
+    top: -1px
+}
 
-    #contact_details {
-        width: 80%
-    }
-
+.social_media .fb-like {
+    margin-top: 20px;
+    display: block
 }

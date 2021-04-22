@@ -26,6 +26,9 @@
 </head>
 <body>
     
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="Hi3gPumJ"></script>
+
 	<dd_loader>
 		<div dd_ajaxload></div>
 	</dd_loader>

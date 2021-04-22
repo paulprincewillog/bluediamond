@@ -17,7 +17,7 @@
             
             <div id="email_header"> 
                 <i class="icon pe-7s-mail"></i> 
-                <p> Reach us through <span> otwopaul@gmail.com</span>  or send a mail below. </p>
+                <p> Reach us through <span> contact@bluediamond.com.ng</span>  or send a mail below. </p>
             </div>
 
             <form dd_submit="yes" action="app/index/send_mail">
@@ -51,7 +51,19 @@
             </div>
 
             <div>
-                <a href="https://wa.me/2347085898670?text=I am messaging from Blue Diamond school and I want to ... " class="whatsapp_button"> <button title="Click to message on WhatsApp"> Message on WhatsApp <img src="_assets/icons/whatsapp.svg" width="14" alt="WhatsApp logo"> </button> </a>
+
+            <div class="social_media">
+
+                <a href="https://wa.me/2348028676295?text=I am messaging from Blue Diamond school and I want to ... "> <i class="icon-whatsapp"></i> Message on WhatsApp </a>
+                
+                <a href="https://web.facebook.com/Blue-Diamond-Schools-100163038732037/"> <i class="icon-facebook"></i> Facebook </a>
+
+                <a href="https://www.instagram.com/p/CKL17c9FXGK/?igshid=1b2rg03061iwx"> <i class="icon-instagram"></i> Instagram </a>
+
+                <div class="fb-like" data-href="https://web.facebook.com/Blue-Diamond-Schools-100163038732037/" data-width="200" data-layout="standard" data-action="like" data-size="small" data-share="false" data-colorscheme="dark"></div>
+
+            </div>
+
             </div>
             
             <div id="email_header"> 

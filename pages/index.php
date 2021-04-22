@@ -3,7 +3,7 @@
 	require "../initialize.php";
 	include BACKEND_LIB."db.php";
 	$page_link = "index";
-	$page_title = "Pick the right school for your child";
+	$page_title = "Homepage";
 	$page_description = "Blue Diamond schools, based in Effurun, strives to make quality education affordable while still committing to a high standard of education. Creche, primary and secondary facilities available.";
 	$page_keywords = "schools in effurun, top schools in effurun, schools in uvwie, schools along pti road, affordable schools in warri, creche in effurun";
 	
@@ -33,7 +33,7 @@
 		define("ACTIVE_CTA","none");
 	}
 
-	loadHeader('main');
+	loadHeader('index');
 	// loadUI('header');
 	
 	

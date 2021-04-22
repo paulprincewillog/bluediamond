@@ -1,0 +1,18 @@
+[class*="icon-"] {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.icon-facebook {
+    background: url(../../_assets/icons/facebook-grey.svg); 
+}
+
+.icon-whatsapp {
+    background: url(../../_assets/icons/whatsapp-grey.svg); 
+}
+
+.icon-instagram {
+    background: url(../../_assets/icons/instagram-grey.svg); 
+}

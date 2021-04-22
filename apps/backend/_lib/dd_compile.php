@@ -31,6 +31,6 @@
 
 
         dd_compile(JS.$page_link, 'scripts.dd', 'js');
-        dd_compile('../'.UI.'_general', 'styles.dd', 'css');
-        // dd_compile(UI.'_general', 'styles.dd', 'css');
+        // dd_compile('../'.UI.'_general', 'styles.dd', 'css');
+        dd_compile(UI.'_general', 'styles.dd', 'css');
         dd_compile(UI.$page_link, 'styles.dd', 'css');

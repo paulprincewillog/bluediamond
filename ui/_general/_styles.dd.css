@@ -363,6 +363,24 @@ form button {
     }
 }
 
+[class*="icon-"] {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.icon-facebook {
+    background: url(../../_assets/icons/facebook-grey.svg); 
+}
+
+.icon-whatsapp {
+    background: url(../../_assets/icons/whatsapp-grey.svg); 
+}
+
+.icon-instagram {
+    background: url(../../_assets/icons/instagram-grey.svg); 
+}
 * {
   font-family: 'Metropolis Light', Arial;
   font-weight: 300;
@@ -490,6 +508,7 @@ main:after {
     footer {
         padding: 0px;
         border-top: 1px solid #333;
+        padding-left: 30px
     }    
 
     footer > * {
@@ -499,12 +518,12 @@ main:after {
         margin-top: 20px
     }
 
-    footer > p {
+    /* footer > p {
         display: block;
         padding: 20px 20px 10px 40px;
         border-top: 1px solid #333;
         margin: 20px 0px;
-    }
+    } */
 
     .flexbox {
         display: block;
