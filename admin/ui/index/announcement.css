@@ -1,0 +1,28 @@
+#post_announcement button {
+    margin-left: 50px
+}
+
+#post_announcement [dd_feedback] {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    margin-left: 45px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.announcement_success {
+    color: #15ad89
+}
+
+form input, form textarea, form select, input[type='text'] {
+    line-height: 150%;
+    padding: 20px 30px;
+    padding-top: 5px
+}
+
+form label {
+    margin: 10px 30px;
+    display: block;
+    color: #777;
+}

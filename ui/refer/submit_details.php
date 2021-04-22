@@ -15,12 +15,12 @@
 
         </div>
 
-        <select name="relationship" required>
+        <!-- <select name="relationship" required>
             <option value=""> Your relationship with our school </option>
             <option value="parent"> I am currently a parent </option>
             <option value="worker"> I work as a teacher/staff</option>
             <option value="friend"> I am a friend of the school</option>
-        </select>
+        </select> -->
 
         <div>
             <input type="number" name="phone_number" placeholder="Your phone number" required>

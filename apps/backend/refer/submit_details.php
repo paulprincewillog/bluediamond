@@ -26,10 +26,11 @@
     $dt->maximum=15; $dt->minimum=11;
     $dt->check("if_empty,if_number,if_minimum,if_maximum");
 
-    $relationship = $dt->getData("relationship");
-    $dt->maximum=100; $dt->minimum=5;
-    $dt->check("if_empty,if_alphabelt,if_minimum,if_maximum");
-
+    // $relationship = $dt->getData("relationship");
+    // $dt->maximum=100; $dt->minimum=5;
+    // $dt->check("if_empty,if_alphabelt,if_minimum,if_maximum");
+    $relationship = "referrer";
+    
     // Don't proceed if there is an error
     if ($dt->there_is_error()) {
         $x['dd_success'] = false;

@@ -1,0 +1,41 @@
+#admin_login i {
+    font-size: 230%;
+    font-weight: bold;
+    color: #555
+}
+
+#admin_login form > section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid #333;
+}
+
+#admin_login form > section > p {
+    flex: 1;
+    font-size: 115%;
+    line-height: 150%;
+    margin: 0px;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+#admin_login form > button {
+    margin-left: 70px;
+    background: #673ab7
+}
+
+#admin_login form > input {
+    padding-left: 70px
+}
+
+#admin_login [dd_feedback] {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-right: 20px;
+    text-align: left;
+    color: #b77064;
+}
+

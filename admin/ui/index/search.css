@@ -1,0 +1,47 @@
+
+/* ----------------- SEARCHBOX */
+
+.searchbox {
+    background: transparent;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    border-bottom: 2px solid #333;
+    width: -webkit-fill-available;
+    overflow: hidden;
+    box-shadow: none;
+    margin: 0px;
+    padding-right: 20px
+}
+
+.searchbox input, .searchbox select {
+    border: 0px;
+    padding: 20px;
+    flex: 2;
+    font-size: 110%;
+    margin: 0px;
+    padding-left: 50px;
+}
+
+.searchbox select {
+    flex: 1;
+    border-right: 2px solid #333;
+    border-left: 2px solid #333
+}
+
+.searchbox i {
+    font-size: 120%;
+    margin: 5px;
+}
+
+.searchbox button {
+    padding: 5px;
+    font-size: 70%;
+    margin: 3px 10px;
+    box-shadow: 0px 10px 25px #333;
+    border-radius:  50%;
+}
+
+.searchbox button:hover {
+    box-shadow: 0px 0px 10px #666;
+}

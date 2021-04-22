@@ -111,7 +111,7 @@
 			include UI ."headers/$link.php";
             
 		} else {
-			echo "<link rel='stylesheet' href='".UI."/$page_link/_styles.dd.css'>";
+			echo "<link rel='stylesheet' href='".UI."/$page_link/_styles.dd.css?v=".VERSION."'>";
 		}
 	}
 
@@ -132,14 +132,14 @@
 		global $page_link;
 		
 		if ($root =="root") {
-            echo "<link rel='stylesheet' href='". ROOT_URL._UI ."$link.css'>";
+            echo "<link rel='stylesheet' href='". ROOT_URL._UI ."$link.css?v=". VERSION."'>";
 		}
 
 		else if (file_exists(UI.$page_link.'/'.$link.'.css')) {
-			echo "<link rel='stylesheet' href='". _UI ."$page_link/$link.css'>";
+			echo "<link rel='stylesheet' href='". _UI ."$page_link/$link.css?v=". VERSION."'>";
 		}
 		else if (file_exists(UI.$link.'.css')) {
-            echo "<link rel='stylesheet' href='". _UI ."$link.css'>";
+            echo "<link rel='stylesheet' href='". _UI ."$link.css?v=". VERSION."'>";
 		}
 	}
 
@@ -148,14 +148,14 @@
 		global $page_link;
 		
 		if ($root =="root") {
-            echo "<script src='". ROOT_URL. FRONTEND ."$link.js'></script>";
+            echo "<script src='". ROOT_URL. FRONTEND ."$link.js?v=".VERSION."'></script>";
 		}
 
 		else if (file_exists(JS.$page_link.'/'.$link.'.js')) {
-			echo "<script src='". FRONTEND ."$page_link/$link.js'></script>";
+			echo "<script src='". FRONTEND ."$page_link/$link.js?v=".VERSION."'></script>";
 		}
 		else if (file_exists(JS.$link.'.js')) {
-            echo "<script src='". FRONTEND ."$link.js'></script>";
+            echo "<script src='". FRONTEND ."$link.js?v=".VERSION."'></script>";
 		}
 	}
 

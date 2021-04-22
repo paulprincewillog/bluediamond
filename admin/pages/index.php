@@ -2,10 +2,19 @@
 
 	require "../../initialize.php";
 	$page_link = "index";
-	$page_title = "index";
-	$page_description = "index";
-	$page_keywords = "index";
+	$page_title = "Welcome back admin";
+	$page_description = "Admin panel";
+	$page_keywords = "Admin panel";
 
-	loadHeader("noheader");
-	loadUI("main");
+	loadHeader("main");
+
+	loadUI("_begin");
+
+	loadUI("login");
+	loadUI("dashboard");
+	loadUI("numbers");
+	loadUI("announcement");
+	
+	loadUI("_end");
+
 	loadFooter("main");

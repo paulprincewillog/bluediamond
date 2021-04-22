@@ -1,0 +1,47 @@
+
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 700px) {
+    #admin_section {
+        padding: 200px 0px 0px 10%;
+	}
+
+    #admin_section > section, #admin_section > #check_numbers {
+        width: auto;
+        margin-left: 40px;
+        border-radius: 10px 0px 0px 0px;
+        border-right: 0px
+	}
+
+	#admin_section .navigation {
+		left: 5px
+    }
+    
+    #main_header {
+        display: flex;
+    }
+
+    #main_links {
+        justify-content: flex-end;
+    }
+
+    #main_header {
+        padding: 15px 5% 15px 5%
+    }     
+
+/*         
+    #admin_section .navigation {
+        bottom: 40%;
+    } */
+        
+    #check_numbers .each_number {
+        border-left: none
+    }
+
+    #check_numbers .each_number:nth-child(2) {
+        border-top: 2px solid #333
+    }
+
+    .searchbox input, .searchbox select {
+        padding-left: 20px
+    }
+}

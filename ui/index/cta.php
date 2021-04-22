@@ -34,7 +34,7 @@
     <div id="cta_schedule">
         <p> Would you be available next week to visit our school? </p>
         <div class="cta_buttons">
-            <button onclick="select_schedule('next_week')"> Yes </button>
+            <button onclick="select_schedule('Next week')"> Yes </button>
             <button onclick="cta('enroll_question')"> No </button>
             <button onclick="cta('cta_schedule2')"> Not next week </button>
         </div>
@@ -43,10 +43,10 @@
     <div id="cta_schedule2">
         <p> When will you like to visit our school? </p>
         <div class="cta_buttons">
-            <button onclick="select_schedule('this_week')"> This week </button>
-            <button onclick="select_schedule('two_weeks')"> Next 2 weeks </button>
-            <button onclick="select_schedule('next_month')"> Next month </button>
-            <button onclick="select_schedule('soon')"> Soon </button>
+            <button onclick="select_schedule('This week')"> This week </button>
+            <button onclick="select_schedule('Two weeks')"> Next 2 weeks </button>
+            <button onclick="select_schedule('Next month')"> Next month </button>
+            <button onclick="select_schedule('Soon')"> Soon </button>
         </div>
     </div>
 

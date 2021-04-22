@@ -1,0 +1,21 @@
+#admin_dashboard p {
+    margin: 25px;
+    font-size: 160%;
+    line-height: 150%;
+}
+
+#admin_dashboard a {
+    padding: 20px 30px;
+    display: block;
+    border-top: 2px solid #333;
+    font-weight:  bold;
+    display: flex;
+    align-items: center;
+    font-size: 125%;
+}
+
+
+#admin_dashboard a > span {
+   flex: 1;
+   margin: 0px 15px;
+}

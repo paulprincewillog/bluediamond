@@ -12,7 +12,7 @@ function dd(selector) {
     
     self.validObject = function() {
         if (typeof selector !== 'object' ) {
-            console.log("The target is not an object");
+            // console.log("The target is not an object");
             return false;
         } else {
             return true;
@@ -63,7 +63,7 @@ function dd(selector) {
 	}
 
 	self.fadeIn = function(time, callback) {
-
+ 
         self.hide();
 		self.target.style.opacity = 0;
 		self.show();
@@ -138,8 +138,19 @@ function dd(selector) {
 	}
 
 	self.isEmpty = function() {
-		for (var key in selector) {
-			if(selector.hasOwnProperty(key)) {
+        
+        var target = selector;
+        // Try to convert to object if not object
+        if (typeof selector !== 'object') {
+            try {
+                target = JSON.parse(target)
+            } catch (error) {
+                console.log("The target object is not one");
+            }
+        }
+
+		for (var key in target) {
+			if(target.hasOwnProperty(key)) {
 				return false;
 			}
 		}
@@ -199,7 +210,6 @@ function dd(selector) {
             }
 
 
-            dd(clone).show();
             clone.removeAttribute('dd_cloned');
 
             target.parentNode.insertBefore(clone, target);
@@ -226,14 +236,22 @@ function dd(selector) {
             
             var feedback_div = document.createElement("div");
             feedback_div.setAttribute('dd_feedback',null);
-            var text = document.createTextNode(feedback);
-            feedback_div.appendChild(text);
+            // var text = document.createTextNode(feedback);
+            feedback_div.innerHTML = feedback;
             target.insertBefore(feedback_div, target.lastElementChild);
             dd(feedback_div).fadeIn(1000);
 
         }
     }
     
+    self.click = function(clickFunction) {
+        if (typeof clickFunction === "function") {
+            self.target.addEventListener("click", () => {
+                clickFunction();
+            })
+        }
+    }
+
 	return self;
 }
 
@@ -287,12 +305,15 @@ function dd_ajax(get) {
     self.expecting = get.expecting || self.if_successful !='' && 'JSON' || ''; 
     self.interval = get.interval || "";
     self.timeSet = get.timeSet || "";
+    self.timeout = get.timeout || 120000;
 
     self.__construct = function() {
         
         self.start_loader();
         self.prepare_data();
         self.prepare_connection();
+        self.prepareErrors();
+        self.prepareTimeOut();
 
         if (self.method == 'GET') {self.request_using_get();} 
         else {self.request_using_post();}
@@ -313,8 +334,12 @@ function dd_ajax(get) {
     
     self.end_loader = function() {
         
-        if (self.loader !='' && self.loader !='off') {
-            self.loader.fadeOut(500);
+        if (self.loader !='off') {
+            var loader = dd('dd_loader [dd_ajaxload]');
+            if (loader.select()) {
+                self.loader = loader;
+                loader.fadeOut(500);
+            }
         }
     }
     
@@ -328,8 +353,32 @@ function dd_ajax(get) {
         self.ajax = window.XMLHttpRequest && new XMLHttpRequest() || new ActiveXObject("Microsoft.XMLHTTP");
     }
 
+    self.prepareErrors = function() {
+        self.ajax.onerror = function(e) {
+            self.showError('Network error, retry');
+        };
+    }
+
+    self.prepareTimeOut = function() {
+        self.ajax.timeout = self.timeout;
+        self.ajax.ontimeout = function () {
+            self.showError('Network error, retry');
+        };
+    }
+
+    self.showError = function(error) {
+        
+        var response = {
+            dd_success: false,
+            dd_feedback: error
+        };
+
+        self.ajax_has_worked(response);
+    }
+
     self.request_using_get = function() {
         self.ajax.open("GET",self.url+'?'+self.data,true);
+        self.ajax.setRequestHeader("HTTP_DODO", "YES");
         self.ajax.send();
     }
 
@@ -342,7 +391,8 @@ function dd_ajax(get) {
         } else if (self.content_type != 'none' &&  self.content_type != '' ) {
             self.ajax.setRequestHeader("Content-type", self.content_type);
         }
-        
+
+        self.ajax.setRequestHeader("DODO", "YES");
         self.ajax.send(self.data);
     }
 
@@ -352,14 +402,23 @@ function dd_ajax(get) {
             if (this.readyState == 4 && this.status == 200) {
                 self.ajax_has_worked(this.responseText);
                 self.end_loader();
+            } else if (this.readyState == 4 && this.status == 500) {
+                self.showError("Server error, retry");
             }
         };
     }
     
     self.ajax_has_worked = function(response) {
         
-        if (self.expecting == "JSON") {
-            response = JSON.parse(response);
+        console.log(response);
+        if (self.expecting == "JSON" && typeof response !== "object") {
+            try {
+                response = JSON.parse(response); 
+            } catch (error) {
+                self.showError("Error, contact admin");
+                return;
+            }
+            
         }
 
         if (typeof self.if_successful === 'function' && typeof response.dd_success !== 'undefined' && response.dd_success) {
@@ -455,6 +514,7 @@ function dd_setClone() {
 }
 
 function dd_bindLoad(dat) {
+
     var url = dat.getAttribute('dd_load');
         
     var amount = dat.getAttribute('dd_amount') !== null && dat.getAttribute('dd_amount') !='' && dat.getAttribute('dd_amount') || '';
@@ -491,7 +551,7 @@ function dd_load(get) {
     
 	var self = {};
 	self.get = get; // The request comes as object, for flexibility
-    self.result = get.result || '';
+    self.result = get.result || 'empty';
 	self.data = get.data || "";
 	self.page = get.page || 1;
 	self.current_button = get.current_button || 'next';
@@ -517,8 +577,8 @@ function dd_load(get) {
 
 		self.prepareParameters();  // Prepare parameters that will be sent to backend
 
-		// If data was already specified, don't send ajax
-		if (self.result != '') {
+        // If data was already specified, don't send ajax
+		if (self.result != 'empty') {
 			self.dataIsReady();
 		}
 
@@ -540,10 +600,11 @@ function dd_load(get) {
 
 	self.dataIsReady = function() {
 
-        // This decide how to display
-        self.convertResult();
-		if (self.result !='' || !dd(self.result).isEmpty()) {
-        
+        // This decides how to display
+		if (self.result !='' && self.result != "[]" || !dd(self.result).isEmpty()) {
+            
+            
+            self.convertResult();
 			self.ready(self.result);  // Callback function as soon as data is available
 
             if (self.amount != '') {
@@ -971,6 +1032,10 @@ function dd_load(get) {
         }
         	
 
+        if (typeof self.nodata === "function") {
+            self.nodata();
+            return;
+        }
 
 		var nodata_div = dd(self.target).select().querySelector("[dd_nodata]");
 		if (nodata_div) {
@@ -978,13 +1043,7 @@ function dd_load(get) {
             hideEverything();
 			dd(nodata_div).fadeIn(500);
             
-        } 
-        
-        else if (typeof self.nodata === "function") {
-            self.nodata();
-        }
-
-        else if (self.nodata !='none') { // If we can't find any element with 'dd_nodata' create one
+		} else if (self.nodata !='none') { // If we can't find any element with 'dd_nodata' create one
             
             hideEverything();
             
@@ -1183,7 +1242,6 @@ function dd_submit(get) {
     
     
     self.__construct = function() {
-
         self.target.addEventListener('submit', function(e) {
 
             e.preventDefault();
@@ -1210,11 +1268,17 @@ function dd_submit(get) {
         get.content_type = "none";
         
         if (self.resultTarget !='' && self.resultTarget !==null) {
+            console.log("Bind result activated");
             get.after_request = function(e) {
 
+                console.log("After_request activated");
+                console.log(e);
+                console.log("This is e above");
+
                 var feedback = e;
-                if (typeof feedback.dd_success !== 'undefined' && feedback.dd_success == true) {
-                        
+                if (typeof feedback === 'object') {
+
+                    console.log("bind_load activated");
                     var target = dd(self.resultTarget).select();
                     target = dd_bindLoad(target);
                     target.result = e;
@@ -1234,29 +1298,34 @@ function dd_submit(get) {
     }
 
     self.prepareCallbacks = function() {
-        get.if_successful = function(e) {
 
-            if (self.redirect !== null) { // If redirect is set from frontend
-                window.location.href = self.redirect;
-            } else if (typeof e.dd_redirect !== "undefined") { // If redirect is set from backend
-                 window.location.href = e.dd_redirect;
-            } else if (self.callback !='' && typeof self.callback === 'function') { // If a callback is set
-                self.callback();
-            } else if (typeof e.dd_feedback !== 'undefined') { // If there is feedback from backend
-                dd(self.target).feedback(e.dd_feedback);
+        if (typeof get.if_successful === "undefined") {
+            get.if_successful = function(e) {
+
+                if (self.redirect !== null) { // If redirect is set from frontend
+                    window.location.href = self.redirect;
+                } else if (typeof e.dd_redirect !== "undefined") { // If redirect is set from backend
+                     window.location.href = e.dd_redirect;
+                } else if (self.callback !='' && typeof self.callback === 'function') { // If a callback is set
+                    self.callback();
+                } else if (typeof e.dd_feedback !== 'undefined') { // If there is feedback from backend
+                    dd(self.target).feedback(e.dd_feedback);
+                }
             }
         }
+        
+        if (typeof get.if_not === "undefined") {
+            get.if_not = function(e) {
+                
+                if (typeof e.dd_feedback === 'undefined') {
+                    var error = "Something went wrong while submitting this form";
+                } else {
+                var error = e.dd_feedback; 
+                }
+                
+                dd(self.target).feedback(error);
 
-        get.if_not = function(e) {
-            
-            if (typeof e.dd_feedback === 'undefined') {
-                var error = "Something went wrong while submitting this form";
-            } else {
-               var error = e.dd_feedback; 
             }
-            
-            dd(self.target).feedback(error);
-
         }
     }
     

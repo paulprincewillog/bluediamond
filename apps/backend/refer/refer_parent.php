@@ -28,9 +28,11 @@
 
     $relationship = "prospect";
     if (isset($_SESSION['referrer'])) {
-        $referrer = $_SESSION['referrer'];
+        $referrer ="Referred";
+        $referrer_detail = $_SESSION['referrer'];
     } else {
-        $referrer = "direct";
+        $referrer = "Direct";
+        $referrer_detail = "";
     }
 
     // Don't proceed if there is an error
@@ -51,7 +53,7 @@
         } else { 
 
             // Insert data into database
-            $sql = "INSERT INTO contacts (full_name, phone_number, title, type, source) VALUES('$full_name','$phone_number','$title','$relationship','$referrer')";
+            $sql = "INSERT INTO contacts (full_name, phone_number, title, type, source, source_details) VALUES('$full_name','$phone_number','$title','$relationship','$referrer','$referrer_detail')";
                 
             $db->sql($sql);
             if ($db->isSuccessful) {

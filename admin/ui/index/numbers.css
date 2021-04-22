@@ -1,0 +1,127 @@
+#admin_section > #check_numbers {
+    width: 70%;
+}
+
+#all_numbers {
+    flex-flow: row wrap;
+    display: flex
+}
+
+#check_numbers .each_number {
+    flex: 1 0 35%;
+    padding: 20px;
+    border-top: 2px solid #333;
+    border-left: 2px solid #333;
+}
+
+#check_numbers .each_number > section:first-child {
+    display: flex;
+    align-items: center;
+}
+
+
+#check_numbers .each_number:nth-child(odd) {
+    border-left: 0px
+}
+
+#check_numbers .each_number:first-child, #check_numbers .each_number:nth-child(2)  {
+    border-top: 0px;
+}
+
+#check_numbers .each_number > section {
+    margin-right: 5px;
+    flex: 1;
+    margin-bottom: 20px;
+    font-size: 90%
+}
+
+#check_numbers .each_number > section > p {
+    margin: 0px
+}
+/* 
+#check_numbers .each_number > section > p:last-child {
+    margin: 0px;
+    font-weight: bold;
+    font-size: 120%;
+    margin-top: 5px;
+} */
+
+#check_numbers .each_number a button {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    font-size: 120%;
+    box-shadow: 0px 10px 25px #333;
+}
+
+.each_number p {
+    margin: 0px
+}
+
+.each_number > section:first-child div {
+    flex: 1;
+    font-size: 130%;
+}
+
+[dd_display='full_name'] {
+    font-weight: bold;
+    /* font-size: 100%; */
+}
+
+p[dd_display='phone_number'] {
+    font-size: 140%;
+    margin-top: 7px;
+}
+
+.each_number small {
+    color: #777;
+}
+
+.each_number span {
+    color: #ccc;
+}
+
+.source a {
+    border-bottom: 1px solid #673ab7;
+    padding-bottom: 3px;
+    margin-left: 10px;
+    font-size: 80%;
+}
+
+.schedule p {
+    margin: 0px;
+    /* font-weight: bold; */
+    font-size: 120%;
+    margin-top: 5px;
+    color: #777;
+}
+
+.source button {
+    padding: 3px 10px;
+    font-weight: normal;
+    margin-left: 0px;
+    background: #34435e;
+}
+
+.schedule b {
+    font-size: 100%;
+    color: #999;
+    border-bottom: 1px solid #333;
+    padding-bottom: 3px
+}
+
+.schedule {
+    color: #999
+}
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 700px) {
+        
+    #all_numbers {
+        display: block;
+    }
+
+    #check_numbers .each_number {
+        max-width: none
+    }
+
+}
