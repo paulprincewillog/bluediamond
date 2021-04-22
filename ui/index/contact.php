@@ -50,8 +50,16 @@
                 <p> Reach us through <span> contact@bluediamond.com.ng</span>   </p>
             </div>
             
-        </section>
+        <!--script from facebook-->
+        <div id="facebook_like">
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0" nonce="XF76SukP"></script>
+       
+        <div class="fb-like" data-colorscheme="dark" data-href="https://web.facebook.com/Blue-Diamond-Schools-100163038732037/" data-width="" data-layout="standard" data-action="like" data-size="small"></div>
 
+        </div>
+        </section>
+        <!--end of script from facebook-->
     </div>
 
 

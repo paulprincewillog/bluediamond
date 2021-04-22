@@ -6,7 +6,6 @@
     <form>
 
         <div>
-
             <select name="title">
                 <option>Mr</option>
                 <option>Mrs</option>

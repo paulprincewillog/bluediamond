@@ -213,6 +213,9 @@
     right: 25%;
     top: 30%;
 }
+#facebook_like span{
+    color:white !important;
+}
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
 
