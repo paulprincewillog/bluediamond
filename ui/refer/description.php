@@ -6,7 +6,7 @@
 
     <h1> Refer someone </h1>
     <p name="caption">
-        Blue Diamond schools is on a mission to make high standard education affordable. Refer a parent to join this mission and we will support you with <b> ₦3000 </b> if they register.
+        Blue Diamond schools is on a mission to make high standard education affordable in Effurun. Refer a parent to join this mission and we will support you with <b> ₦3000 </b> if they register.
     </p>
 
     <!-- <p name="prompt"> Click on an option below <i class="pe-7s-angle-down arrow"></i> </p>

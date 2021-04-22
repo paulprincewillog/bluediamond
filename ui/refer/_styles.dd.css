@@ -1,7 +1,6 @@
 #top_description {
   background-image: url('../../_assets/images/students-of-blue-diamond-schools-warri.jpg');
   background-size: cover;
-  background-position: bottom;
   background-repeat: no-repeat;
   position: relative;
   color: white;
@@ -142,9 +141,7 @@
   #top_description h1, #top_description [name='caption'], #top_description [name='actions'], .forms > p, .forms form, #share_link > p, #link_button > a, #link_form, #copied_message p {
     width: 70% !Important;
   }
-}
-
-.forms form {
+}.forms form {
     border: 2px solid #333;
     border-radius: 10px;
     width: 60%
@@ -152,24 +149,28 @@
 
 .forms form > div {
     display: flex;
-    border-top: 2px solid #333
+    border-top: 2px solid #333;
+    overflow: hidden;
 }
 
 .forms form > div > * , .forms form > select {
     border-bottom: 0px;
-    margin-right: 20px;
-    margin-left: 20px
 }
 
 .forms form > div > input:last-child {
     border-left: 2px solid #333;
-    margin-left: 20px;
-    padding-left: 20px
+    padding-left: 20px;
+    width: -webkit-fill-;
+    margin-left: 10px
 }
 
+.forms form button > i {
+    position: relative;
+    right: -5px;
+    top: 1px
+}
 
 .forms form > div > input:first-child {
-    border-right: 2px solid #333;
     margin-right: 0px;
     padding-right: 20px;
     margin-left: 0px;
@@ -177,7 +178,6 @@
 }
 .forms form > div:first-child {
     border-top: 0px;
-    border-bottom: 2px solid #333
 }
 
 .forms form > div > input {
@@ -213,7 +213,6 @@
 
 #refer_parent form > div:first-child {
     border-top: 0px;
-    border-bottom: 2px solid #333;
 }
 
 #refer_parent > [name='refer_successful'] {
@@ -231,6 +230,11 @@
 }
 
 @media only screen and (min-width: 0px) and (max-width: 700px) {
+
+    .forms form {
+        width: 100% !important
+    }
+
     .forms form > div {
         display: block;
     }
@@ -330,20 +334,14 @@
     margin-bottom: 20px;
     display: none
 }
-
-@media only screen and (min-width: 0px) and (max-width: 700px) {
-        
-    #link_form {
-        display: block;
-    }
-}main > section {
+main > section {
     padding: 10%;
     padding-top: 0px;
     padding-bottom: 5%
 }
 
 #submit_details, #refer_parents, #refer_successful, #share_link {
-    margin-top: -50px;
+    margin-top: -70px;
 }
 
 
@@ -375,4 +373,24 @@
     text-align: left;
     line-height: 130%;
     color: #48a4ec;
+}
+
+#refer_parent > b {
+    display: inline-block;
+    margin: 20px 0px 10px 10px;
+    color: #777;
+    font-size: 130%;
+    font-weight: bold;
+    border-bottom: 2px solid #777;
+    padding-bottom: 5px;
+}
+@media only screen and (min-width: 0px) and (max-width: 700px) {
+        
+    #link_form {
+        display: block;
+    }
+        
+    #submit_details, #refer_parents, #refer_successful, #share_link {
+        margin-top: -50px;
+    }
 }

@@ -24,7 +24,7 @@
 
         <div>
             <input type="number" name="phone_number" placeholder="Your phone number" required>
-            <button> Next  <i class="pe-7s-angle-right arrow_right"></i> </button>
+            <button> Next  <i class="pe-7s-angle-right"></i> </button>
         </div>
 
         <input type="hidden" name="where_next">

@@ -1,0 +1,11 @@
+
+@media only screen and (min-width: 0px) and (max-width: 700px) {
+        
+    #link_form {
+        display: block;
+    }
+        
+    #submit_details, #refer_parents, #refer_successful, #share_link {
+        margin-top: -50px;
+    }
+}

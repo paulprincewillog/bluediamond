@@ -5,7 +5,7 @@ main > section {
 }
 
 #submit_details, #refer_parents, #refer_successful, #share_link {
-    margin-top: -50px;
+    margin-top: -70px;
 }
 
 
@@ -37,4 +37,14 @@ main > section {
     text-align: left;
     line-height: 130%;
     color: #48a4ec;
+}
+
+#refer_parent > b {
+    display: inline-block;
+    margin: 20px 0px 10px 10px;
+    color: #777;
+    font-size: 130%;
+    font-weight: bold;
+    border-bottom: 2px solid #777;
+    padding-bottom: 5px;
 }
