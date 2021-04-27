@@ -2,6 +2,7 @@
 
     require "../../../initialize.php";
     require '../_lib/db.php';
+    require '../_lib/sendmail.php';
 
     $x = [];
 
@@ -26,6 +27,14 @@
         $x['dd_success'] = true;
         $x['dd_feedback'] = "success"; 
         $_SESSION['phone_number'] = $phone_number;
+
+        // Send email notification
+         // Send mail
+         $mail->Subject = "$sender sent you an email from your website";
+         $mail->Body    = $content. "<br> <h3> Reply to $sender </h3>"; //'This is the HTML message body <b>in bold!</b>';
+         $mail->AltBody = $content. "--------- Reply to $sender" ; //'This is the body in plain text for non-HTML mail clients';
+         $mail->send();
+
     } else {
         $x['dd_success'] = false;
         $x['dd_feedback'] = "An error occured, contact admin";//$db->feedback; 
