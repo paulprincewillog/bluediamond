@@ -1,13 +1,4 @@
 <?php 
-
-
-require "../../../initialize.php";
-require '../_lib/data.php';
-require 'PHPMailer-Exception.php';
-
-
-
-
     class Mail{
 
         public $Subject;
@@ -19,9 +10,6 @@ require 'PHPMailer-Exception.php';
             $this->Body=" ";
             $this->AltType=" ";
         }
-
-        
-
         public function send(){
             
             try {
@@ -55,5 +43,6 @@ require 'PHPMailer-Exception.php';
 }
 
 $mail = new Mail();
+$mailer= new PHPMailer(true);
 echo "class is set";
 ?>
