@@ -2,16 +2,6 @@
 <html lang="en">
 <head>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194581927-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-194581927-1');
-    </script>
-
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title><?php echo $page_title; ?> | Affordable high standard education in Effurun - BlueDiamond.com.ng</title>
@@ -19,10 +9,7 @@
     <meta name='keyword' content="<?php echo $page_keywords; ?>">
     <meta name="description" content="<?php echo $page_description; ?>">
     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="ui/_general/_styles.dd.css?v=<?php echo VERSION ; ?>">
     <link rel="stylesheet" href="ui/<?php echo $page_link; ?>/_styles.dd.css?v=<?php echo VERSION ; ?>">
-    <link href="_assets/fonts/metropolis/stylesheet.css" rel="stylesheet">
-    <link rel="stylesheet" href="_assets/icons/pe-icon/styles/pe-icon.css">
 </head>
 <body>
     

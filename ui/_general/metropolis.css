@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Metropolis Light';
+    src: url('../../_assets/fonts/metropolis/Metropolis-Light.woff2') format('woff2'),
+        url('../../_assets/fonts/metropolis/Metropolis-Light.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis Black';
+    src: url('../../_assets/fonts/metropolis/Metropolis-Black.woff2') format('woff2'),
+        url('../../_assets/fonts/metropolis/Metropolis-Black.woff') format('woff');
+    font-display: swap;
+}
+

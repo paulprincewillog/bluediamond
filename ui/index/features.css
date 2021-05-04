@@ -59,7 +59,8 @@
 
 
 .feature_image img {
-    width: 100%
+    width: 100%;
+    height: auto
 }
 
 .features .each_feature {
@@ -192,8 +193,10 @@
 
 .slider .slider_button i {
     position: relative;
-    top: -10px;
-    left: -10px;
+    top: -6px;
+    left: -8px;
+    width: 25px;
+    height: 25px;
 }
 
 .slider .next_line {

@@ -18,7 +18,8 @@
 }
 
 #testimonial .testimonial_image {
-    width: 100%
+    height: auto;
+    width: 100%;
 }
 
 #testimonial > div {

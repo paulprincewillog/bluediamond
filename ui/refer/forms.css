@@ -24,7 +24,8 @@
 .forms form button > i {
     position: relative;
     right: -5px;
-    top: 1px
+    top: 4px;
+    margin-top: -3px
 }
 
 .forms form > div > input:first-child {

@@ -17,10 +17,10 @@
 
             <div id="address"> 
                 <p> 166 Jeffia Estate, Opposite Omosibo Filling Station, Along PTI road, Effurun, Delta State. </p>
-                <a href="https://goo.gl/maps/gCGzJaTsvk7Xo5Vb8"> View full map <i class="icon pe-7s-angle-right"> </i></a>
+                <a href="https://goo.gl/maps/gCGzJaTsvk7Xo5Vb8"> View full map </a>
             </div>
             <div id="map">
-                <iframe title="location" src="" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy" id="iframe_map"></iframe>
+                <iframe title="location" src="" width="300" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy" id="iframe_map"></iframe>
             </div>
 
         </section>
@@ -46,8 +46,6 @@
                 <a href="https://web.facebook.com/Blue-Diamond-Schools-100163038732037/"> <i class="icon-facebook"></i> Facebook </a>
                 <a href="https://wa.me/2348028676295?text=I am messaging from Blue Diamond school and I want to ... "> <i class="icon-whatsapp"></i> WhatsApp </a>
                 <a href="https://www.instagram.com/p/CKL17c9FXGK/?igshid=1b2rg03061iwx"> <i class="icon-instagram"></i> Instagram </a>
-
-                <div class="fb-like" data-href="https://web.facebook.com/Blue-Diamond-Schools-100163038732037/" data-width="200" data-layout="standard" data-action="like" data-size="small" data-share="false" data-colorscheme="dark"></div>
 
             </div>
             
