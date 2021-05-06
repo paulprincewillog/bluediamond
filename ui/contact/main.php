@@ -1,11 +1,9 @@
 <section id="contact">
 
-    
-    <h1 id="contact_title">
-        <span class="title_line"> Contact our school in Effurun </span>
-        <span class="down_pointer"> <i class="pe-7s-angle-down"></i> </span>
-    </h1>
-    <h2> Looking for a school close to you along PTI road in Uvwie LGA, or looking to partner with one of the top schools in Effurun? Use one the means to contact Blue Diamond schools below </h2>
+        
+    <h1 id="contact_title"> CONTACT OUR SCHOOL IN EFFURUN <img src="_assets/icons/down-arrow.svg" height="25" width="25" class="arrow"> </h1>
+
+    <p id="contact_caption"> Looking for a school close to you along PTI road in Uvwie LGA, or looking to partner with one of the top schools in Effurun? Use one the means below to contact Blue Diamond schools </p>
 
     <div class="white_space2">
         <div class="grey_line"></div>
@@ -61,15 +59,13 @@
 
                 <a href="https://www.instagram.com/p/CKL17c9FXGK/?igshid=1b2rg03061iwx"> <i class="icon-instagram"></i> Instagram </a>
 
-                <div class="fb-like" data-href="https://web.facebook.com/Blue-Diamond-Schools-100163038732037/" data-width="200" data-layout="standard" data-action="like" data-size="small" data-share="false" data-colorscheme="dark"></div>
-
             </div>
 
             </div>
             
-            <div id="email_header"> 
-                <i class="icon pe-7s-mail"></i> 
-                <p> Reach us through <span> contact@bluediamond.com.ng</span>   </p>
+            <div id="opening_hours"> 
+                <i class="icon pe-7s-clock"></i> 
+                <p> We are Open 7am - 5pm, Monday till Friday. </p>
             </div>
             
         </section>

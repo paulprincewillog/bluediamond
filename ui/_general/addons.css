@@ -9,3 +9,34 @@
 .flexbox > * {
     flex: 1
 }
+
+
+.arrow {
+    margin-left: 20px
+}
+
+
+.arrow {
+	-webkit-animation: gif 1s infinite alternate;
+	animation: gif 1s infinite alternate;
+	position: relative;
+	font-size: 20px;
+}
+
+@keyframes gif {
+  from {
+    top: 15px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+@-webkit-keyframes gif {
+  from {
+    top: 15px;
+  }
+  to {
+    top: 0px;
+  }
+}

@@ -49,3 +49,9 @@
 .pe-7s-check {
     background-image: url(../../_assets/icons/pe-icon/check.svg); 
 }
+
+
+.pe-7s-clock {
+    background-image: url(../../_assets/icons/pe-icon/clock.svg); 
+    transform: rotate(180deg);
+}

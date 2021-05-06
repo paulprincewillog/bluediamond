@@ -65,6 +65,11 @@
     #other_contacts .phone_number a {
         margin-left: 0px
     }
+
+    #contact_title, #contact_caption {
+        margin: 30px;
+        width: 80%;
+    }
 }
 
 
