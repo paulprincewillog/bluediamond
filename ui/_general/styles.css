@@ -2,14 +2,13 @@
   font-family: 'Metropolis Light', Arial;
   font-weight: 300;
   font-style: normal;
-  transition: all 0.5s
+  font-size: 14px;
 }
 
 body {
     margin: 0px;
     padding: 0px;
     color: #333;
-    font-size: 14px;
     line-height: 150%;
     background: black
 }

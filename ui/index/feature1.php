@@ -1,7 +1,7 @@
 <div class="features current_view" id="feature1">
 
     <div class="feature_image">
-        <img src="_assets/images/computer-facilities-in-effurun.jpg" loading="lazy" alt="Facilities at blue diamond schools Effurun">
+        <img src="_assets/images/computer-facilities-in-effurun.jpg" loading="lazy" alt="Facilities at blue diamond schools Effurun" width="250" height="160">
     </div>
 
     <div class="each_feature">

@@ -21,8 +21,9 @@
     flex: 2;
 }
 
-#logo > img {
-    height: 65px
+#logo img {
+    height: 65px;
+    width: auto
 }
 
 #main_links {
@@ -60,8 +61,12 @@
 }
 
 #main_links i {
-    padding: 5px;
-    margin-left: -5px;
+   
+    margin: 0px 1px 0px 7px;
+    position: relative;
+    top: 2px;
+    height: 16px;
+    width: 16px;
 }
 
 #main_links .icon {

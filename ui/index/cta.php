@@ -77,7 +77,7 @@
     </div>
 
     <section id="cta_image">
-        <img src="_assets/images/profile-picture.jpg" alt="blue diamond schools admin">
+        <img src="_assets/images/profile-picture.jpg" alt="blue diamond schools admin" width="50" height="50" >
     </section>
 
     <input type="hidden" name="active_cta" value="<?php echo ACTIVE_CTA;?>">

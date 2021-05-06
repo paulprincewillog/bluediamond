@@ -1418,7 +1418,7 @@ function dd_init() {
     });
 }
 
-
-dd_init();
-
+window.addEventListener('load', function () {
+    dd_init();
+});
 

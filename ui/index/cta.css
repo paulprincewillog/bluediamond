@@ -37,6 +37,7 @@
 
 #cta_image > img {
     height: 55px;
+    width: auto;
     margin-top: 30px;
     border-radius: 50%;
     box-shadow: 0px 10px 25px #000;
@@ -82,8 +83,10 @@
 }
 
 #cta_success i {
-    font-size: 300%;
+    width: 40px;
+    height: 40px;
     margin-left: 20px;
+    transform: rotateX(180deg)
 }
 
 #cta_success p {
@@ -115,6 +118,21 @@
 #close_cta span:hover {
     box-shadow: 0px 0px 10px #222;
 }
+
+
+#close_cta i {
+    width: 20px;
+    height: 20px;
+}
+
+
+#cta form button > i {
+    position: relative;
+    right: -5px;
+    top: 4px;
+    margin-top: -3px
+}
+
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
 

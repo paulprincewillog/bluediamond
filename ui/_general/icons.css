@@ -1,18 +1,51 @@
-[class*="icon-"] {
+[class*="icon-"], [class*="pe-7s-"] {
     width: 14px;
     height: 14px;
     display: inline-block;
     background-repeat: no-repeat;
+    background-origin: content-box;
 }
 
 .icon-facebook {
-    background: url(../../_assets/icons/facebook-grey.svg); 
+    background-image: url(../../_assets/icons/facebook-grey.svg); 
 }
 
 .icon-whatsapp {
-    background: url(../../_assets/icons/whatsapp-grey.svg); 
+    background-image: url(../../_assets/icons/whatsapp-grey.svg); 
 }
 
 .icon-instagram {
-    background: url(../../_assets/icons/instagram-grey.svg); 
+    background-image: url(../../_assets/icons/instagram-grey.svg); 
+}
+
+.pe-7s-call {
+    background-image: url(../../_assets/icons/pe-icon/call.svg); 
+    transform: rotate(
+-70deg
+);
+}
+
+
+.pe-7s-mail {
+    background-image: url(../../_assets/icons/pe-icon/mail.svg); 
+}
+
+
+.pe-7s-angle-down {
+    background-image: url(../../_assets/icons/pe-icon/angle-down.svg); 
+}
+
+
+.pe-7s-angle-right {
+    background-image: url(../../_assets/icons/pe-icon/angle-right.svg); 
+}
+
+
+.pe-7s-close {
+    background-image: url(../../_assets/icons/pe-icon/close.svg); 
+}
+
+
+.pe-7s-check {
+    background-image: url(../../_assets/icons/pe-icon/check.svg); 
 }

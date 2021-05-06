@@ -1,10 +1,11 @@
 <section id="contact">
 
     
-    <h3 id="contact_title">
-        <span class="title_line"> Contact us  </span>
+    <h1 id="contact_title">
+        <span class="title_line"> Contact our school in Effurun </span>
         <span class="down_pointer"> <i class="pe-7s-angle-down"></i> </span>
-    </h3>
+    </h1>
+    <h2> Looking for a school close to you along PTI road in Uvwie LGA, or looking to partner with one of the top schools in Effurun? Use one the means to contact Blue Diamond schools below </h2>
 
     <div class="white_space2">
         <div class="grey_line"></div>
@@ -80,7 +81,7 @@
 
         <div id="address"> 
             <small> Address </small>
-            <p> 166 Jeffia Estate, Opposite Omosibo Filling Station, Along PTI road, Effurun, Delta State. </p>
+            <p> 166 Jeffia Estate, Opposite Omosibo Filling Station, Along PTI road, Uvwie LGA, Effurun, Delta State. </p>
             <a href="https://goo.gl/maps/gCGzJaTsvk7Xo5Vb8"> View full map <i class="icon pe-7s-angle-right"> </i></a>
         </div>
         <div id="map">

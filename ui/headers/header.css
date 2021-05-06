@@ -17,8 +17,9 @@
     flex: 1;
 }
 
-#logo > img {
-    height: 65px
+#logo img {
+    height: 65px;
+    width:auto
 }
 
 #main_links {
