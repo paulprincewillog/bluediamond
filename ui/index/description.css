@@ -90,6 +90,35 @@
     display: inline-block;
 }
 
+.arrow {
+    margin-left: 20px
+}
+
+
+.arrow {
+	-webkit-animation: gif 1s infinite alternate;
+	animation: gif 1s infinite alternate;
+	position: relative;
+	font-size: 20px;
+}
+
+@keyframes gif {
+  from {
+    top: 15px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+@-webkit-keyframes gif {
+  from {
+    top: 15px;
+  }
+  to {
+    top: 0px;
+  }
+}
 
 /* Small devices (phones, 600px and down) */
 @media only screen and (min-width: 0px) and (max-width: 768px) {

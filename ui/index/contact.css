@@ -1,12 +1,12 @@
 #contact {
-    padding-top: 10%;
-    /* background-image: url('../../_assets/images/students-of-blue-diamond-schools-warri.jpg'); */
-    /*background-image: url('../../_assets/images/blank_banner.jpg'); */
-    background-size: 100%;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    position: relative
+  padding-top: 10%;
+  /* background-image: url('../../_assets/images/students-of-blue-diamond-schools-warri.jpg'); */
+  /*background-image: url('../../_assets/images/blank_banner.jpg'); */
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
 }
 
 /* #contact:after {
@@ -19,303 +19,292 @@
     bottom: 0px
 } */
 
-    
 #contact_title {
-    width: 70%;
-    margin: 50px auto;
-    display: flex;
-    align-items: center;
+  width: 70%;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
 }
 
 #contact_title i {
-    position: relative;
-    top: -6px;
-    left: -8px;
-    width: 25px;
-    height: 25px;
+  position: relative;
+  top: -6px;
+  left: -8px;
+  width: 25px;
+  height: 25px;
 }
 
 #contact_title .title_line {
-    border-bottom: 2px solid #333;
-    padding-bottom: 5px;
-    padding-right: 20px;
-    color: #fff;
-    display: inline-block;
-    margin-left: 10px;
-    margin-right: 20px
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  color: #fff;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 20px;
 }
 
 .down_pointer {
-    width: 10px;
-    height: 10px;
-    padding: 10px;
-    background: #673AB7;
-    color: white;
-    font-size: 30px;
-    border-radius: 50px;
-    display: inline-block;
-    cursor: pointer;
-    font-weight: normal;
-    box-shadow: 0px 5px 20px #2b1d44;
+  width: 10px;
+  height: 10px;
+  padding: 10px;
+  background: #673ab7;
+  color: white;
+  font-size: 30px;
+  border-radius: 50px;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: normal;
+  box-shadow: 0px 5px 20px #2b1d44;
 }
 
-
 #contact_details {
-    /* border: 1px solid #222; */
-    border-left: 0px;
-    width: 70%;
-    display: flex;    
-    margin-left: 12%;
-    margin-top: 5%;
-    align-items: flex-end
+  /* border: 1px solid #222; */
+  border-left: 0px;
+  width: 70%;
+  display: flex;
+  margin-left: 12%;
+  margin-top: 5%;
+  align-items: flex-end;
 }
 
 #contact_details > * {
-    flex: 1
+  flex: 1;
 }
 
 #other_contacts > #email_header {
-    display: flex;
-    padding: 25px;
-    align-items: center;
-    border-bottom: 0px
+  display: flex;
+  padding: 25px;
+  align-items: center;
+  border-bottom: 0px;
 }
 
 #email_header p {
-    padding-left: 20px;
-    color: #888
+  padding-left: 20px;
+  color: #888;
 }
 
 #email_header i {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 #email_header span {
-    display: inline-block;
-    margin-bottom: 5px;
-    word-break: break-all;
-    color: #fff
+  display: inline-block;
+  margin-bottom: 5px;
+  word-break: break-all;
+  color: #fff;
 }
 
 #other_contacts > div {
-    border-bottom: 2px solid #333;
-    padding: 10px 30px;
+  border-bottom: 2px solid #333;
+  padding: 10px 30px;
 }
 
 #other_contacts .phone_number {
-    font-size: 130%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    font-weight: bold;
+  font-size: 130%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
 }
 
 .phone_number p {
-    font-weight: bold;
-    color: #ddd;
+  font-weight: bold;
+  color: #ddd;
 }
 
 #other_contacts .phone_number a {
-    background: #097956;
-    color: white;
-    font-weight: bold;
-    display: inline-block;
-    padding: 2px 10px 3px 23px;
-    border-radius: 50px;
-    margin-left: 30px;
-    box-shadow: 0px 10px 25px #000;
+  background: #097956;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  padding: 2px 10px 3px 23px;
+  border-radius: 50px;
+  margin-left: 30px;
+  box-shadow: 0px 10px 25px #000;
 }
 
 #other_contacts .phone_number span {
-    position: relative;
-    left: -7px;
-    top: -2px;
-    font-size: 14px;
+  position: relative;
+  left: -7px;
+  top: -2px;
+  font-size: 14px;
 }
 
 #other_contacts .phone_number a i {
-    position: relative;
-    left: -8px;
-    top: 3px;
-    font-size: 60%;
-    background-color: #0b523c;
-    padding: 4px;
-    border-radius: 50%;
+  position: relative;
+  left: -8px;
+  top: 3px;
+  font-size: 60%;
+  background-color: #0b523c;
+  padding: 4px;
+  border-radius: 50%;
 }
 
-
 #contact_address {
-    position: relative;
-    min-height: 600px;
-    border-radius: 10px 10px 0px 0px;
-    overflow: hidden;
-    border: 2px solid #333;
-    border-bottom: 0px;
+  position: relative;
+  min-height: 600px;
+  border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
+  border: 2px solid #333;
+  border-bottom: 0px;
 }
 
 #map {
-    position: absolute;
-    background:#ddd;
-    top: 0px;
-    bottom: 0px;
-    right: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%
+  position: absolute;
+  background: #ddd;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
 }
 
 #map iframe {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
-
 
 #map::after {
-    content: "";
-    display: block;
-    position: absolute;
-    background:rgba(0,0,0,0.4);
-    top: 0px;
-    bottom: 0px;
-    right: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-    cursor: pointer;
-    pointer-events: none;
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  pointer-events: none;
 }
 
-
-
 #address {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    left: 0px;
-      /* margin-left: 40px; */
-    /* border-radius: 0px 0px 0px 5px; */
-    /* border: 1px solid #222; */
-    border-top: 0px;
-    border-right: 0px;
-    padding: 25px;
-    z-index: 2;
-    background: rgba(0,0,0,0.9);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  /* margin-left: 40px; */
+  /* border-radius: 0px 0px 0px 5px; */
+  /* border: 1px solid #222; */
+  border-top: 0px;
+  border-right: 0px;
+  padding: 25px;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.9);
 }
 
 #address i {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 #address a {
-    display: inline-block;
-    border-bottom: 1px solid #673ab7;
-    padding-bottom: 5px
+  display: inline-block;
+  border-bottom: 1px solid #673ab7;
+  padding-bottom: 5px;
 }
 
 #other_contacts {
-    margin: 0px;
-    background: #000;
-    border: 2px solid #333;
-    border-width: 2px 2px 0px 2px;
-    border-radius: 10px 10px 0px 0px;
-    position: relative;
-    left: -20px;
+  margin: 0px;
+  background: #000;
+  border: 2px solid #333;
+  border-width: 2px 2px 0px 2px;
+  border-radius: 10px 10px 0px 0px;
+  position: relative;
+  left: -20px;
 }
 
 #contact .white_space2 {
-    right: 25%;
-    top: 30%;
+  right: 25%;
+  top: 30%;
 }
 
-
 .social_media > * {
-    padding: 5px 0px;
-    margin: 0px 10px;
-    display: inline-block;
-    color: #999;
+  padding: 5px 0px;
+  margin: 0px 10px;
+  display: inline-block;
+  color: #999;
 }
 
 .social_media > a {
-    border-bottom: 2px solid #333;
-    color: #999;;
-    margin-bottom: 10px;
+  border-bottom: 2px solid #333;
+  color: #999;
+  margin-bottom: 10px;
 }
 
 .social_media i {
-    height: 13px;
-    width: 13px;
-    margin: 0px 5px 3px 5px;
-    vertical-align: middle;
-    position: relative;
-    top: -1px
+  height: 13px;
+  width: 13px;
+  margin: 0px 5px 3px 5px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
 }
 
 .social_media .fb-like {
-    margin-top: 20px;
-    display: block
+  margin-top: 20px;
+  display: block;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+  #contact {
+    height: fit-content;
+  }
 
-    #contact {
-        height: fit-content
-    }
+  #contact_details {
+    display: block;
+    width: auto;
+    margin: 20px;
+    margin-bottom: 0px;
+  }
 
-    #contact_details {
-        display: block;
-        width: auto;
-        margin: 20px;
-        margin-bottom: 0px;
-    }
+  #contact_details > *:first-child {
+    border-right: 0px;
+  }
 
-    #contact_details > *:first-child {
-        border-right: 0px;
-    }
+  #contact_address {
+    height: 500px;
+    border-radius: 10px;
+  }
 
-    #contact_address {
-        height: 500px;
-        border-radius: 10px;
-    }
+  #other_contacts {
+    margin: 0px;
+    left: 0px;
+    margin-top: 20px;
+  }
 
-    #other_contacts {
-        margin: 0px;
-        left: 0px;
-        margin-top: 20px;
-    }
+  #send_email {
+    width: 80%;
+  }
 
-    #send_email {
-        width: 80%
-    }
-    
-    #contact > h2 {
-        margin: 70px 10px 50px 15%;
-    }
+  #contact > h2 {
+    margin: 70px 10px 50px 15%;
+  }
 
-    #other_contacts > div {
-        padding: 20px
-    }
+  #other_contacts > div {
+    padding: 20px;
+  }
 
-    #other_contacts .phone_number {
-        display: block;
-        text-align: left
-    }
+  #other_contacts .phone_number {
+    display: block;
+    text-align: left;
+  }
 
-    #other_contacts .phone_number a {
-        margin-left: 0px
-    }
+  #other_contacts .phone_number a {
+    margin-left: 0px;
+  }
 }
-
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-    
-    #contact {
-        padding-top: 15%;
-    }
+  #contact {
+    padding-top: 15%;
+  }
 
-    #contact_details {
-        width: 80%
-    }
-
+  #contact_details {
+    width: 80%;
+  }
 }

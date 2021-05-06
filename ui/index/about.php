@@ -10,9 +10,9 @@
             <div name="location">
                 <span>Location</span>
                 <p> 166 PTI Road,
-                Effurun </p> 
-                Delta State,
-                Nigeria
+                <span id="_addressLocality7" itemprop="addressLocality">Effurun </span> </p> 
+                <span id="_addressRegion8" itemprop="addressRegion">Delta State,</span>
+                <span id="_addressCountry9" itemprop="addressCountry">Nigeria </span>
             </div>
 
             <div name="classes">

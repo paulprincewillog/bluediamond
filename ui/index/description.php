@@ -8,7 +8,7 @@
 
         <div>
 
-            <h3> Welcome to Blue Diamond schools Effurun </h3>
+            <h3><meta itemprop="name" content="Blue Diamond schools Effurun"> Welcome to Blue Diamond schools Effurun </h3>
             <h1 title="Welcome">
                 Affordable high standard education for every parent.
             </h1>

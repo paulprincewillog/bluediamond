@@ -5,7 +5,7 @@
     <section id="main_header">
 
         <div id="logo">
-            <img src="_assets/logo/blue diamond warri logo.png">
+            <img itemprop="image" src="_assets/logo/blue diamond warri logo.png">
         </div>
 
         <div id="main_links">
