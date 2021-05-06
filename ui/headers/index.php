@@ -25,7 +25,12 @@
         <section id="main_header">
 
             <div id="logo">
-                <a href="<?php echo ROOT_URL; ?>" name="Homepage" title="Click to go back to homepage"> <img src="_assets/logo/blue-diamond-warri-logo.png" width="125" height="111" alt="blue diamond school logo"> </a>
+                <a href="<?php echo ROOT_URL; ?>" name="Homepage" title="Click to go back to homepage">
+                <picture>
+                    <source srcset="_assets/logo/blue-diamond-warri-logo.webp" type="image/webp">
+                    <img src="_assets/logo/blue-diamond-warri-logo.png" width="125" height="111" alt="blue diamond school logo">
+                 </picture>
+                </a>
             </div>
 
             

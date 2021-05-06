@@ -77,7 +77,11 @@
     </div>
 
     <section id="cta_image">
+        <picture>
+        <source srcset="_assets/images/profile-picture.webp" type="image/webp">
+        <source srcset="_assets/images/profile-picture.jpg" type="image/jpg">
         <img src="_assets/images/profile-picture.jpg" alt="blue diamond schools admin" width="50" height="50" >
+        </picture>
     </section>
 
     <input type="hidden" name="active_cta" value="<?php echo ACTIVE_CTA;?>">
