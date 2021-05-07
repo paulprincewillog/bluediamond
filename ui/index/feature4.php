@@ -18,7 +18,7 @@
             </h2>
 
             <p class="highlight">
-                When you have a view to air, a suggestion or a complaint, our PTA community is one that fosters feedback from every parent. We see ourselves as a family where we all build relationships and improve each other. 
+                When you have a view to air, a suggestion or a complaint, our PTA community is one that fosters feedback from every parent. We see ourselves as a family where we all build relationships and improve each other. Our family includes parents from PTI road, UTI, Okuokoko, Osubi, Ebrumede and other close by regions. 
             </p>
             
         </div> 

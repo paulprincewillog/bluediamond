@@ -1,7 +1,7 @@
 <div class="features current_view" id="feature1">
 
     <div class="feature_image">
-        <img src="_assets/images/computer-facilities-in-effurun.jpg" loading="lazy" alt="Facilities at blue diamond schools Effurun" width="250" height="160">
+        <img src="_assets/images/computer-facilities-in-effurun.jpg" loading="lazy" alt="Our computer facilities at blue diamond schools Effurun" width="250" height="160">
     </div>
 
     <div class="each_feature">
@@ -18,7 +18,7 @@
             </h2>
 
             <p class="highlight">
-                You would not want a school that is affordable but compromises on it's facilities. Our school in Effurun has computer facilities for learning and is currently making investments for more facilities.
+                You would not want a school that is affordable but compromises on it's facilities. Being one of the best schools in Effurun, we make it a priority to invest in our facilities, which currently includes a well equipped computer lab, with more facilities on the way. 
             </p>
             
         </div> 

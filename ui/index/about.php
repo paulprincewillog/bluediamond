@@ -1,18 +1,16 @@
     <div id="about" class="padding10" title="about us">
 
-        <h2 class="dd_shortline title">Why we stand out</h2>
+        <h2 class="dd_shortline title">Why we are one of the best schools in Effurun</h2>
         <p class="content_for_about_us">
-            Most schools in Effurun provide affordable school fees by compromising on their standard of education, Blue Diamond school strives to be different by making <span> quality education affordable </span> to every parent. If you are looking for a school in Effurun for your children that is affordable and also committed to a high standard of education, then <span onclick="cta('cta_schedule')" class="book_tour"> book a free tour now </span> and we would support you with a <span> 10% discount </span> .
+            Most schools in Effurun provide affordable school fees by compromising on their standard of education, Blue Diamond school strives to be different by making <span> quality education affordable </span> to every parent. If you live along PTI road or close by environment and want a school for your children that is affordable and also committed to a high standard of education, then <span onclick="cta('cta_schedule')" class="book_tour"> book a free tour now </span> and we would support you with a <span> 10% discount </span> .
         </p>
 
         <div class="flexbox highlights_for_about_us">
 
             <div name="location">
                 <span>Location</span>
-                <p> 166 PTI Road,
-                <span id="_addressLocality7" itemprop="addressLocality">Effurun </span> </p> 
-                <span id="_addressRegion8" itemprop="addressRegion">Delta State,</span>
-                <span id="_addressCountry9" itemprop="addressCountry">Nigeria </span>
+                <p> 166 PTI Road, Effurun  </p> 
+                <span> Delta State, Nigeria </span>
             </div>
 
             <div name="classes">

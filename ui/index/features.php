@@ -20,7 +20,7 @@
                 <span data-slide="feature4" onclick="slide('feature4')">4</span>
             </div>
 
-            <p> Click for more highlights </p>
+            <p onclick="slide()"> Click for more highlights </p>
             <div class="slider_arrow">
                 <span class="next_line arrow_right"> </span>
                 <button onclick="slide()"  title="Click for previous slide"> <i class="pe-7s-angle-right"></i> </button>

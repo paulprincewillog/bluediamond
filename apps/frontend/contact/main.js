@@ -4,3 +4,8 @@ function dd_intialize() {
 }
 
 // Every other instructions, variables, functions that will run later goes below
+console.log("hello");
+var button = document.querySelector("#button");
+button.addEventListener("click", e => {
+  document.querySelector(".element").classList.toggle("flip-scale-down-diag-2")
+})

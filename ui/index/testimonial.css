@@ -1,5 +1,9 @@
+#testimonial_container {
+    margin-top: 50px
+}
+
 #testimonial_container h2 {
-    margin: 70px 10%;
+    margin: 0px 10% 70px 10%;
     margin-bottom: 30px;
     font-size: 200%;
     line-height: 130%;
@@ -21,6 +25,8 @@
     height: auto;
     width: 100%;
 }
+
+
 
 #testimonial > div {
     flex: 1;
@@ -70,6 +76,8 @@ div.author p {
     top: 120px;
     right: -160px;
     margin-top: -150px;
+    border: none !important;
+    z-index: 0
 }
 
 .blinking_circle::before {
@@ -105,4 +113,9 @@ div.author p {
       transform: scale(2.5, 2.5);
       opacity: 0;
     }
+}
+
+#testimonial_container .rating_icon {
+    margin: 0px 10%;
+    margin-bottom: -20px;
 }

@@ -16,17 +16,18 @@
         <section id="contact_address"> 
 
             <div id="address"> 
-                <p> 166 Jeffia Estate, Opposite Omosibo Filling Station, Along PTI road, Effurun, Delta State. </p>
-                <a href="https://goo.gl/maps/gCGzJaTsvk7Xo5Vb8"> View full map </a>
+                <h2> Find our school in PTI Road </h2>
+                <p> 166 Jeffia Estate, Opposite Omosibo Filling Station, Along PTI road, Effurun, Delta State, Nigeria. </p>
+                <a href="https://goo.gl/maps/gCGzJaTsvk7Xo5Vb8" target="_blank"> View full map </a>
             </div>
             <div id="map">
-                <iframe title="location" src="" width="300" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy" id="iframe_map"></iframe>
+                <iframe title="location" src="" width="300" height="700" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy" id="iframe_map"></iframe>
             </div>
 
         </section>
         
         <section id="other_contacts">
-         
+            <div class="blinking_circle"></div>
             <div class="phone_number">
                 <p> 0708 589 8670 </p> 
                 <a href="tel: 07085898670">

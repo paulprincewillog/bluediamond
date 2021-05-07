@@ -1,18 +1,18 @@
 
 function cta(cta) {
-    console.log(cta+" is called");
+
     var current_cta = dd(".current_cta");
     var next_cta = dd('#'+cta).select();
 
     if (cta == 'no') {
-        dd("#cta").fadeOut('500');
+        dd("#cta").fadeOut(400);
     }
 
     else if(current_cta.select()) { // If we already had a current CTA
 
         // First, fade out current cta
-        current_cta.fadeOut(500);
-        dd("#cta").fadeIn(700);       
+        current_cta.fadeOut(400);
+        dd("#cta").show();       
 
         // Wait till fadeIn is complete
         setTimeout(function() {
@@ -20,12 +20,12 @@ function cta(cta) {
             // Remove 'current_cta' class from the element it is currently on
             current_cta.select().classList.remove('current_cta');
             next_cta.classList.add('current_cta');
-            dd(next_cta).fadeIn(500);
+            dd(next_cta).fadeIn(400);
 
-        }, 700);
+        }, 500);
 
     } else {
-        dd("#cta").fadeIn(1000);       
+        dd("#cta").fadeIn(400);       
         next_cta.classList.add('current_cta');
         
     }

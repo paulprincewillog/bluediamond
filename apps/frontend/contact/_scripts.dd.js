@@ -1,1 +1,2 @@
 function dd_intialize(){console.log("This page is now active")}
+console.log("hello");var button=document.querySelector("#button");button.addEventListener("click",e=>{document.querySelector(".element").classList.toggle("flip-scale-down-diag-2")})

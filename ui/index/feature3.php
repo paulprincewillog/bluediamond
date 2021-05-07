@@ -18,7 +18,7 @@
             </h2>
 
             <p class="highlight">
-                Our creche facility is one area we have quality experience in. From the learning curriculum, to the trained care givers, we've helped early learners become more creative and to start learning how to read at an early age. Our playful creche environment will help your young child thrive.
+                Our creche facility is one area we have quality experience in. From the learning curriculum, to the trained care givers, we've helped early learners become more creative and to start learning how to read at an early age. Located in a safe and serene environment, we ensure the security of your child.
             </p>
             
         </div> 

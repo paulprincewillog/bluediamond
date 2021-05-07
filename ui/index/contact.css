@@ -111,6 +111,7 @@
 
 .phone_number p {
   font-weight: bold;
+  text-align: left;
   color: #ddd;
 }
 
@@ -119,9 +120,9 @@
   color: white;
   font-weight: bold;
   display: inline-block;
-  padding: 2px 10px 3px 23px;
+  padding: 1px 10px 3px 23px;
   border-radius: 50px;
-  margin-left: 30px;
+  margin-left: 25px;
   box-shadow: 0px 10px 25px #000;
 }
 
@@ -135,7 +136,7 @@
 #other_contacts .phone_number a i {
   position: relative;
   left: -8px;
-  top: 3px;
+  top: 4px;
   font-size: 60%;
   background-color: #0b523c;
   padding: 4px;
@@ -144,7 +145,7 @@
 
 #contact_address {
   position: relative;
-  min-height: 600px;
+  min-height: 700px;
   border-radius: 10px 10px 0px 0px;
   overflow: hidden;
   border: 2px solid #333;
@@ -247,6 +248,25 @@
 .social_media .fb-like {
   margin-top: 20px;
   display: block;
+}
+
+#contact .blinking_circle {
+  height: 50px;
+  top: 35px;
+  right: -10px;
+  margin-top: -60px;
+  text-align: right;
+  width: auto;
+}
+
+#contact .blinking_circle::before {
+  width: 30px;
+  height: 30px;
+}
+
+#contact .blinking_circle::after {
+  width: 30px;
+  height: 30px;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {

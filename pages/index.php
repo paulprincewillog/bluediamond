@@ -5,7 +5,7 @@
 	$page_link = "index";
 	$page_title = "Pick the right school for your child";
 	$page_description = "Blue Diamond schools, based in Effurun, strives to make quality education affordable while still committing to a high standard of education. Creche, primary and secondary facilities available.";
-	$page_keywords = "schools in effurun, top schools in effurun, schools in uvwie, schools along pti road, affordable schools in warri, creche in effurun";
+	$page_keywords = "schools in effurun, best schools in effurun, schools in pti road, schools along pti road, affordable schools in warri, creche in effurun";
 	
 	// Personalize title for referral
 	if (isset($_GET['ref'])) {

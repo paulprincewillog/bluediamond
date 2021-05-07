@@ -1,5 +1,6 @@
     <div id="testimonial_container">
         
+        <img src="_assets/icons/rating.svg" width="100" height="100" class="rating_icon">
         <h2> Parents around Effurun <br> trust our standards </h2>
         <div class="blinking_circle"></div>
         <div id="testimonial">

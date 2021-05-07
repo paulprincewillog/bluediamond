@@ -63,7 +63,8 @@ function dd(selector) {
 	}
 
 	self.fadeIn = function(time, callback) {
- 
+        
+        time = parseInt(time);
         self.hide();
 		self.target.style.opacity = 0;
 		self.show();
