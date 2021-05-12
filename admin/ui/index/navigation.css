@@ -22,7 +22,10 @@
 .navigation .prev_view i {
     position: relative;
     top: -10px;
-    left: -10px;
+    left: -8px;
+    transform: rotate(180deg);
+    width: 25px;
+    height: 25px;
 }
 
 .navigation .next_line {

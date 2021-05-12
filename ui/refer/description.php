@@ -4,15 +4,11 @@
 -->
 <section id="top_description">
 
-    <h1> Refer someone </h1>
+    <h1> Refer someone to our school in Effurun</h1>
     <p name="caption">
-        Blue Diamond schools is on a mission to make high standard education affordable in Effurun. Refer a parent to join this mission and we will support you with <b> ₦3000 </b> if they register.
+        Blue Diamond schools is on a mission to make high standard education affordable and stand out as one of the best schools in Effurun. 
+        
+        <br> <br> If you know anyone who lives along PTI Road, Osubi, Okuokoko, Alegbo, UTI Road, Ebrumede and other neighbouring environment, refer them to us if they are looking for an affordable high standard school for their child. And we will support you with <b> ₦3000 </b> if they register.
     </p>
-
-    <!-- <p name="prompt"> Click on an option below <i class="pe-7s-angle-down arrow"></i> </p>
-    <div name="actions">
-        <a onclick="submit_details('refer')"> <span> Refer someone using phone number </span> <i class="pe-7s-angle-right"></i> </a>
-        <a onclick="submit_details('link')"> <span> Share our website link with everyone </span>  <i class="pe-7s-angle-right"></i>  </a>
-    </div> -->
 
 </section>

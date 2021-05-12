@@ -17,8 +17,13 @@
 
             <div id="address"> 
                 <h2> Find our school in PTI Road </h2>
-                <p> 166 Jeffia Estate, Opposite Omosibo Filling Station, Along PTI road, Effurun, Delta State, Nigeria. </p>
-                <a href="https://goo.gl/maps/gCGzJaTsvk7Xo5Vb8" target="_blank"> View full map </a>
+                <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"> 
+                    <span itemprop="streetAddress"> 166 Jeffia Estate, Opposite Omosibo Filling Station, Along PTI road </span>, 
+                    <span itemprop="addressLocality">Effurun</span>, 
+                    <span itemprop="addressRegion">Delta State</span>, 
+                    <span itemprop="addressCountry">Nigeria</span>. </p>
+                    <a href="https://goo.gl/maps/gCGzJaTsvk7Xo5Vb8" target="_blank" rel="noreferrer"> View full map </a>
+                </p>
             </div>
             <div id="map">
                 <iframe title="location" src="" width="300" height="700" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy" id="iframe_map"></iframe>
@@ -29,14 +34,14 @@
         <section id="other_contacts">
             <div class="blinking_circle"></div>
             <div class="phone_number">
-                <p> 0708 589 8670 </p> 
+                <p itemprop="telephone"> 0708 589 8670 </p> 
                 <a href="tel: 07085898670">
                   <i class="icon pe-7s-call"></i> <span> Call </span> 
                 </a> 
             </div>
 
             <div class="phone_number">
-                <p> 0703 578 9129 </p> 
+                <p itemprop="telephone"> 0703 578 9129 </p> 
                 <a href="tel: 0703578129">
                    <i class="icon pe-7s-call"></i>  <span> Call </span>  
                 </a> 
@@ -52,7 +57,7 @@
             
             <div id="email_header"> 
                 <i class="icon pe-7s-mail"></i> 
-                <p> Reach us through <span> contact@bluediamond.com.ng</span>   </p>
+                <p> Reach us through <span itemprop="email">  contact<!-- >@. -->@<!-- >@. -->bluediamond<!-- >@. -->.<!-- >@. -->com<!-- >@. -->.<!-- >@. -->ng </span>   </p>
             </div>
             
         </section>

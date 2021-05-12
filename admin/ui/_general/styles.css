@@ -1,0 +1,14 @@
+
+.pe-7s-speaker {
+    background-image: url(../../../_assets/icons/pe-icon/speaker.svg); 
+    transform: rotateX(180deg);
+    position: relative;
+    top: -2px;
+}
+
+.pe-7s-search {
+    background-image: url(../../../_assets/icons/pe-icon/search.svg); 
+    width: 20px;
+    height: 20px;
+    transform: rotateX(180deg);
+}

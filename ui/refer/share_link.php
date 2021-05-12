@@ -19,8 +19,8 @@
         </p>
     </div>
 
-    <a href="https://wa.me" name="whatsapp"> <button> <img src="_assets/icons/whatsapp.svg" width="14"> Share on WhatsApp </button> </a>
-    <a href="https://fb.com" name="facebook"> <button > <img src="_assets/icons/facebook.svg"  width="14"> Share on Facebook </button> </a>
+    <a href="https://wa.me" name="whatsapp"> <button> <img src="_assets/icons/whatsapp.svg" width="14" height="14"> Share on WhatsApp </button> </a>
+    <a href="https://fb.com" name="facebook"> <button > <img src="_assets/icons/facebook.svg"  width="14"  height="14"> Share on Facebook </button> </a>
 
 </section>
 

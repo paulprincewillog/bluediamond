@@ -1,3 +1,37 @@
+window.addEventListener('load', function () {
+    set_cta();
+});
+
+function set_cta() {
+    
+    // Activate CTA form
+    dd_submit({
+        target: "#submit_number > form",
+        url: "app/index/submit_number",
+        callback: function(e) {
+            
+            cta('cta_success');
+            setTimeout(() => {
+               cta('no'); 
+            }, 5000);
+
+            // Inform app that schedule is set so it doesn't bring the cta again
+            if (dd("#submit_number [name='schedule']").val() !='none') {
+                dd("#submit_number [name='schedule']").val("set");
+            };
+        }
+    });
+
+    // Display CTA immediately if available
+    var active_cta = dd("#cta > [name='active_cta']").val();
+    if (active_cta !='none') {
+        setTimeout(() => {
+            cta(active_cta);
+        }, 3000);
+    }
+
+
+}
 
 function cta(cta) {
 

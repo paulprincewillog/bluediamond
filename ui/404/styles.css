@@ -1,0 +1,38 @@
+main {  
+	margin: 5% 10%;
+	width: 60%;
+	margin-top: 15%
+}
+
+h1 {
+	line-height: 150%;
+	font-size: 450%;
+	margin-bottom: -20px
+}
+
+main p {
+	font-size: 180%;
+	line-height: 150%;
+}
+
+main button {
+	margin-left: 0px
+}
+
+#back {
+	margin-top: 80px;
+	font-size: 130%;
+	width: 50%
+}
+
+/* Big tabs and below */
+@media only screen and (max-width: 768px) {
+      main {
+		  margin-top: 200px;
+		  width: 85%
+	  }
+
+	  #back {
+		  width: 80%
+	  }
+}	

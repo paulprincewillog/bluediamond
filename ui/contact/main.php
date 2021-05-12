@@ -1,7 +1,7 @@
 <section id="contact">
 
         
-    <h1 id="contact_title"> CONTACT OUR SCHOOL IN EFFURUN <img src="_assets/icons/down-arrow.svg" height="25" width="25" class="arrow"> </h1>
+    <h1 id="contact_title"> CONTACT OUR SCHOOL IN EFFURUN <img src="_assets/icons/down-arrow.svg" height="25" width="25" class="arrow" alt="Arrow pointing down"> </h1>
 
     <p id="contact_caption"> Looking for a school close to you along PTI road in Uvwie LGA, or looking to partner with one of the top schools in Effurun? Use one the means below to contact Blue Diamond schools </p>
 
@@ -16,7 +16,7 @@
             
             <div id="email_header"> 
                 <i class="icon pe-7s-mail"></i> 
-                <p> Reach us through <span> contact@bluediamond.com.ng</span>  or send a mail below. </p>
+                <p> Reach us through <span>  contact<!-- >@. -->@<!-- >@. -->bluediamond<!-- >@. -->.<!-- >@. -->com<!-- >@. -->.<!-- >@. -->ng </span>  or send a mail below. </p>
             </div>
 
             <form dd_submit="yes" action="app/index/send_mail">
@@ -78,10 +78,10 @@
         <div id="address"> 
             <small> Address </small>
             <p> 166 Jeffia Estate, Opposite Omosibo Filling Station, Along PTI road, Uvwie LGA, Effurun, Delta State. </p>
-            <a href="https://goo.gl/maps/gCGzJaTsvk7Xo5Vb8"> View full map <i class="icon pe-7s-angle-right"> </i></a>
+            <a href="https://goo.gl/maps/gCGzJaTsvk7Xo5Vb8" target="_blank" rel="noreferrer"> View full map </a>
         </div>
         <div id="map">
-            <iframe title="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.0235317057222!2d5.792473513560625!3d5.5635298959662585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1041adb341059367%3A0x85ef7875cfab9aab!2sBlue%20Diamond%20School!5e0!3m2!1sen!2sng!4v1600442938081!5m2!1sen!2sng" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy" id="iframe_map"></iframe>
+            <iframe title="location" src="" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy" id="iframe_map"></iframe>
         </div>
 
     </section>

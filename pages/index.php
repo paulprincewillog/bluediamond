@@ -17,20 +17,28 @@
 		define("REF_NAME",", ".$ref_name.", ");
 		define("ACTIVE_CTA","cta_referral");
 
-		$_SESSION['referral'] = $ref_number;
+		$_SESSION['source_type'] = "Referred";
+		$_SESSION['source_details'] = $ref_number;
 
 	} else if (isset($_GET['utm_source']) && strtolower($_GET['utm_source']) == 'facebook') {
 		
 		$page_title = "Welcome to our school";
-		define("REF_NAME", "Facebook");
+		define("REF_NAME", "facebook");
 		define("ACTIVE_CTA","cta_facebook");
-		$_SESSION['referral'] = "facebook";
 
 	}
 
 	else {
 		define("REF_NAME","");
 		define("ACTIVE_CTA","none");
+	}
+
+	if (isset($_GET['utm_source'])) {
+		$_SESSION['source_type'] = $_GET['utm_source'];
+	}
+
+	if (isset($_GET['utm_campaign'])) {
+		$_SESSION['source_details'] = $_GET['utm_campaign'];
 	}
 
 	loadHeader('index');
@@ -46,6 +54,7 @@
 	loadUI('contact');
 	loadUI('cta');
 
+	loadUI("updates");
 	
 	//loadUI('transition');
 	loadFooter('main');

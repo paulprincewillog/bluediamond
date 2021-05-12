@@ -5,7 +5,7 @@
         <button type="submit"> <i class="pe-7s-search"></i> </button>
     </form>
 
-    <section id="all_numbers" dd_pagination="no" dd_amount="all">
+    <section id="all_numbers" dd_amount="all">
 
         <div class="each_number" dd_clone="2">
 

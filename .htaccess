@@ -2,18 +2,27 @@ Options +FollowSymLinks
 
 RewriteEngine on
 
+# Remove trailing slash from non-filepath urls
+RewriteCond %{REQUEST_URI} /(.+)/$
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ http://localhost/%1 [R=301,L]
+
+# Include trailing slash on directory 
+RewriteCond %{REQUEST_URI} !(.+)/$
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^(.+)$ http://localhost/$1/ [R=301,L]
+
+# Force HTTPS and WWW 
+# RewriteCond %{HTTP_HOST} !^www\.(.*)$ [OR,NC]
+# RewriteCond %{https} off  
+# RewriteRule ^(.*)$ https://bluediamond.com.ng/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^www.bluediamond.com.ng [NC]
+RewriteRule ^(.*)$ https://bluediamond.com.ng/$1 [L,R=301]
+
 # RewriteRule ^(.+)/(ui|_assets|apps)/(.*)$ $2/$3 [L]
 
 RewriteRule ^app/(.*)/(.*)$ apps/backend/$1/$2.php [L]
-
-RewriteRule ^store/(.*)/(ui|_assets|apps)/(.*)/?$ website/$2/$3 [NC,L]
-RewriteRule ^store/(.*)/app/(.*)/(.*)$ website/apps/backend/$2/$3.php [NC,L]
-
-RewriteRule ^store/(.*)/(.*)/?$ website/$2?store=$1 [NC,L,QSA]
-RewriteRule ^store/(.*)$ /amara/store/$1/ [L,R=301]
-RewriteRule ^store/(.*)/?$ website/index?user=$1 [NC,L]
-RewriteRule ^store/?$ website/index [NC,L]
-
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
@@ -21,6 +30,7 @@ RewriteRule ^(.*)/?$ pages/$1.php [NC,L]
 
 RewriteRule ^index.php pages/index.php [NC,L]
 RewriteRule ^$ pages/index.php [NC,L]
+
 
 <ifmodule mod_deflate.c>
 AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
@@ -38,44 +48,6 @@ mod_gzip_item_exclude mime ^image/.*
 mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
 </ifModule>
 
-##Tweaks##
-Header set X-Frame-Options SAMEORIGIN
-
-## EXPIRES CACHING ##
-<IfModule mod_expires.c>
-ExpiresActive On
-ExpiresByType image/jpg "access 1 year"
-ExpiresByType image/jpeg "access 1 year"
-ExpiresByType image/gif "access 1 year"
-ExpiresByType image/png "access 1 year"
-ExpiresByType text/css "access 1 month"
-ExpiresByType text/html "access 1 month"
-ExpiresByType application/pdf "access 1 month"
-ExpiresByType text/x-javascript "access 1 month"
-ExpiresByType application/x-shockwave-flash "access 1 month"
-ExpiresByType image/x-icon "access 1 year"
-ExpiresDefault "access 1 month"
-</IfModule>
-## EXPIRES CACHING ##
-
-<IfModule mod_headers.c>
-    Header set Connection keep-alive
-    <filesmatch "\.(ico|flv|gif|swf|eot|woff|otf|ttf|svg)$">
-        Header set Cache-Control "max-age=2592000, public"
-    </filesmatch>
-    <filesmatch "\.(jpg|jpeg|png)$">
-        Header set Cache-Control "max-age=1209600, public"
-    </filesmatch>
-    # css and js should use private for proxy caching https://developers.google.com/speed/docs/best-practices/caching#LeverageProxyCaching
-    <filesmatch "\.(css)$">
-        Header set Cache-Control "max-age=31536000, private"
-    </filesmatch>
-    <filesmatch "\.(js)$">
-        Header set Cache-Control "max-age=1209600, private"
-    </filesmatch>
-    <filesMatch "\.(x?html?|php)$">
-        Header set Cache-Control "max-age=600, private, must-revalidate"
-      </filesMatch>
-</IfModule>
-
-ErrorDocument 404 https://bluediamond.com.ng/404.html
+ErrorDocument 403 http://localhost/bluediamond/404
+ErrorDocument 404 http://localhost/bluediamond/404
+ErrorDocument 500 http://localhost/bluediamond/404

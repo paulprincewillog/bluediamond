@@ -1,0 +1,1 @@
+function dd_intialize(){console.log("This page is now active")}

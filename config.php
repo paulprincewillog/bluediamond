@@ -26,5 +26,9 @@
 	// Define version
 	define("VERSION", "10");
 
-	// https://github.com/matthiasmullie/minify to minify files
-	// <script async src="my.js">
+	
+	// Define email settings
+	define("EMAIL_HOST", "smtp.gmail.com");
+	define("EMAIL_USERNAME", "otwopaul@gmail.com");
+	define("EMAIL_PASSWORD", "o21997ogheneminE");
+	define("ADMIN_EMAIL", "otwopaul@gmail.com");

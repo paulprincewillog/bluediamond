@@ -1,11 +1,11 @@
 <section id="submit_details" class="forms">
 
-    <p>Fill in your details below to generate your referal link<i class="pe-7s-angle-down arrow"></i> </p>
+    <p>Fill in your details below to generate your referral link<i class="pe-7s-angle-down arrow"></i> </p>
 
     <form>
 
         <div>
-
+            
             <select name="title" required>
                 <option>Mr</option>
                 <option>Mrs</option>

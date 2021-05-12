@@ -1,6 +1,9 @@
 
     </main>
 
+    <meta itemprop="url" content="https://bluediamond.com.ng/">
+    </span>
+
     <footer>
         <a> Contact us </a>
         <a> <img src="_assets/icons/facebook-grey.svg" alt="Facebook logo"> Facebook </a>

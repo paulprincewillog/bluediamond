@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Microdata markup added by Google Structured Data Markup Helper. -->
 <html lang="en">
 <head>
 
@@ -11,7 +10,9 @@
     <meta name="description" content="<?php echo $page_description; ?>">
     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="ui/<?php echo $page_link; ?>/_styles.dd.css?v=<?php echo VERSION ; ?>">
-   
+    <link rel="preconnect" href="https://google.com">
+    <link rel="preload" href="_assets/fonts/metropolis/Metropolis-Light.woff2">
+    <link rel="preload" href="_assets/fonts/metropolis/Metropolis-Black.woff2">
 </head>
 <body>
     
@@ -19,6 +20,7 @@
 		<div dd_ajaxload></div>
 	</dd_loader>
 
+    <span itemscope itemtype="http://schema.org/LocalBusiness">
     <header id="header">
         
         <?php // loadUI('index/announcement'); ?>
@@ -26,7 +28,13 @@
         <section id="main_header">
 
             <div id="logo">
-                <a href="<?php echo ROOT_URL; ?>" name="Homepage" title="Click to go back to homepage"> <img src="_assets/logo/blue-diamond-warri-logo.png" width="125" height="111" alt="blue diamond school logo"> </a>
+                <a href="<?php echo ROOT_URL; ?>" name="Homepage" title="Click to go back to homepage">
+                
+                <picture>
+                    <source srcset="_assets/logo/blue-diamond-warri-logo.webp" type="image/webp">
+                    <img itemprop="image" src="_assets/logo/blue-diamond-warri-logo.png" width="125" height="111" alt="blue diamond school logo">
+                 </picture>
+                 </a>
             </div>
 
             

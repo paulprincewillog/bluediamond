@@ -24,7 +24,7 @@
     </div>
 
     <div id="cta_facebook">
-        <p> We noticed that you clicked on our link from Facebook . After you must have gone through our website, would you contact you to discuss more? </p>
+        <p> We noticed that you clicked on our link from Facebook . After you must have gone through our website, would you like us to contact you to discuss more? </p>
         <div class="cta_buttons">
             <button onclick="cta_form('continue')"> Yes </button>
             <button onclick="cta('no')"> No </button>
@@ -77,7 +77,11 @@
     </div>
 
     <section id="cta_image">
-        <img src="_assets/images/profile-picture.jpg" alt="blue diamond schools admin" width="50" height="50" >
+    <picture>
+        <source srcset="_assets/images/profile-picture.webp" type="image/webp">
+        <source srcset="_assets/images/profile-picture.jpg" type="image/jpg">
+        <img src="_assets/images/profile-picture.jpg" alt="blue diamond schools admin" width="50" height="50" loading="lazy">
+        </picture>
     </section>
 
     <input type="hidden" name="active_cta" value="<?php echo ACTIVE_CTA;?>">

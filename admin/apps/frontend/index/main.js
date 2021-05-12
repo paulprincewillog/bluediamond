@@ -1,25 +1,27 @@
-dd_ajax({
-    url: "app/index/auto_login",
-    if_successful: function() {
-        load_admin();
-        change_slide('#admin_dashboard');
-    },
-    if_not: function() { 
-        dd("#admin_login").show();
-    }
-    
-})
+window.addEventListener('load', function () {
+
+    dd_ajax({
+        url: "app/index/auto_login",
+        if_successful: function() {
+            load_admin();
+            change_slide('#admin_dashboard');
+        },
+        if_not: function() { 
+            dd("#admin_login").show();
+        }
+        
+    })
 
 
-dd_submit({
-    target: "#admin_login > form",
-    url: "app/index/login",
-    if_successful: function() {
-        load_admin();
-        change_slide('#admin_dashboard');
-    }
+    dd_submit({
+        target: "#admin_login > form",
+        url: "app/index/login",
+        if_successful: function() {
+            load_admin();
+            change_slide('#admin_dashboard');
+        }
+    });
 });
-
 
 function load_admin() {
 
@@ -44,7 +46,8 @@ function check_numbers() {
     dd_load({
         url: "app/index/check_numbers",
         target: "#all_numbers",
-        amount: 12
+        amount: 8,
+        pagination: 'yes'
     });
 
     change_slide("#check_numbers");

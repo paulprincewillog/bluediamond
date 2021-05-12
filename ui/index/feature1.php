@@ -1,7 +1,11 @@
 <div class="features current_view" id="feature1">
 
     <div class="feature_image">
-        <img src="_assets/images/computer-facilities-in-effurun.jpg" loading="lazy" alt="Our computer facilities at blue diamond schools Effurun" width="250" height="160">
+        <picture>
+                <source srcset="_assets/images/computer-facilities-in-effurun.webp" type="image/webp">
+                <source srcset="_assets/images/computer-facilities-in-effurun.jpg" type="image/jpeg">
+                <img src="_assets/images/computer-facilities-in-effurun.jpg" loading="lazy" alt="Facilities at blue diamond schools Effurun" width="250" height="160">
+        </picture>
     </div>
 
     <div class="each_feature">

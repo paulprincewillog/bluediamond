@@ -1,6 +1,9 @@
 
 <div id="loading_cover">
-    <img src="_assets/logo/cover-logo.jpg" width="80" height="71.19" alt="Blue Diamond">
+    <picture>
+        <source srcset="_assets/logo/cover-logo.webp" type="image/webp">
+        <img src="_assets/logo/cover-logo.jpg" width="80" height="71.19" alt="Blue Diamond">
+    </picture>
 </div>
 
 <style>

@@ -1,13 +1,18 @@
     <div id="testimonial_container">
         
-        <img src="_assets/icons/rating.svg" width="100" height="100" class="rating_icon">
+        <img src="_assets/icons/rating.svg" width="100" height="100" class="rating_icon" alt="Five star rating for Blue Diamond schools">
         <h2> Parents around Effurun <br> trust our standards </h2>
         <div class="blinking_circle"></div>
         <div id="testimonial">
 
             <div itemprop="review" itemscope itemtype="http://schema.org/Review" class="each_testimonial">
 
+                <picture>
+                    <source srcset="_assets/images/parent-from-our-school-in-effurun.webp" type="image/webp" class="testimonial_image">
+                    <source srcset="_assets/images/parent-from-our-school-in-effurun.jpg" type="image/jpeg" class="testimonial_image">
                     <img src="_assets/images/parent-from-our-school-in-effurun.jpg" class="testimonial_image" alt="One of our parent at Blue Diamond Schools " width="200" height="200">
+                 </picture>
+
                     <p itemprop="reviewBody" class="caption">
                         I moved into Effurun and was looking for a good school for my 3 year old child. I was impressed with the way my neighbours child behaved and found out they were students of Blue Diamond schools. I have not regretted the choice I made as I have gotten a good experince so far.    
                     </p>  
@@ -21,7 +26,12 @@
 
             <div  id="_review13" itemprop="review" itemscope itemtype="http://schema.org/Review" class="each_testimonial">
 
-                <img src="_assets/images/another-parent-from-effurun.jpg" class="testimonial_image" alt="another parent of blue diamond schools who gave a good rating" width="200" height="200">
+               <picture>
+                    <source srcset="_assets/images/another-parent-from-effurun.webp" class="testimonial_image" type="image/webp">
+                    <source srcset ="_assets/images/another-parent-from-effurun.jpg" class="testimonial_image" type="imge/jpg">
+                     <img src="_assets/images/another-parent-from-effurun.jpg" class="testimonial_image" alt="another parent of blue diamond schools who gave a good rating" width="200" height="200">
+                </picture>
+                
                 <p class="caption">
                 <span itemprop="reviewBody">I have been with Blue Diamond for three years now and have not changed my mind. They give my child teaching standards that is higher than his level so he can grow, and I have seen the improvements over time. My other son have also started schooling there too.</span> 
                 </p> 
@@ -50,4 +60,9 @@
 
     </section> -->
 
+    <span itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+        <meta itemprop="ratingValue" content="5">
+        <meta itemprop="ratingCount" content="2">
+    </span>
+    
 </section>

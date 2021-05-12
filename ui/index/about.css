@@ -24,8 +24,10 @@
     color: #ab83ef;
     border-bottom: #673ab7 solid 1px;
 }
-.book_tour:hover{
+
+#about .content_for_about_us span.book_tour:hover {
     cursor:pointer;
+    color: #673ab7
 }
 .highlights_for_about_us {
     width: 80%;

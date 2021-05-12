@@ -1,6 +1,6 @@
 
 
-@media only screen and (min-device-width: 0px) and (max-device-width: 700px) {
+@media only screen and (min-device-width: 0px) and (max-device-width: 768px) {
     #admin_section {
         padding: 200px 0px 0px 10%;
 	}
@@ -42,6 +42,7 @@
     }
 
     .searchbox input, .searchbox select {
-        padding-left: 20px
+        padding-left: 20px;
+        width: 70%
     }
 }

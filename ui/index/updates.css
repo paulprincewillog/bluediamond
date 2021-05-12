@@ -1,0 +1,97 @@
+.modal {
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background: rgba(0,0,0,0.9);
+	display: none;
+	z-index: 5;
+}
+
+.modal > div {
+	background: rgba(0,0,0,0.9);
+    width: 40%;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 15px;
+	position: relative;
+	border: 2px solid #333
+}
+
+.modal > div > * {
+	padding: 20px;
+}
+
+.modal a {
+	display: block;
+	font-weight: bold;
+}
+
+.modal p {
+	font-size: 120%;
+    line-height: 160%;
+	text-align: left;
+	padding-top: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px
+}
+
+.modal input {
+	border: 1px solid #ddd;
+	border-radius: 50px;
+	padding: 15px 30px;
+}
+
+
+.modal small {
+	color: #999;
+	display: inline-block
+}
+
+#updates small > span {
+	border-bottom: 2px solid #333;
+	padding-bottom: 2px;
+	font-weight: bold
+}
+
+#updates .pe-7s-angle-right, #updates .pe-7s-close {
+	border: 2px solid #333;
+    border-radius: 50%;
+    padding: 2px;
+    position: relative;
+    bottom: -10px;
+    margin-left: 20px;
+    width: 20px;
+    height: 20px;
+    margin-top: -20px;
+}
+
+#updates .pe-7s-close {
+	margin-left: 0px;
+	margin-right: 5px;
+}
+
+#updates .close_button {
+	position: absolute;
+    border-top: 0px;
+    text-align: right;
+    width: 100%;
+    right: 0px;
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+#updates .close_button span {
+	border-bottom: 2px solid #333;
+	padding-bottom: 2px
+}
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 700px) {
+		
+	.modal > div {
+		width: 90%;
+	}
+
+}

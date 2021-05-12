@@ -2,34 +2,14 @@ window.addEventListener('load', function () {
 
     dd("#loading_cover").fadeOut(500);
 
-    dd_submit({
-        target: "#submit_number > form",
-        url: "app/index/submit_number",
-        callback: function(e) {
-            
-            cta('cta_success');
-            setTimeout(() => {
-               cta('no'); 
-            }, 5000);
-
-            // Inform app that schedule is set so it doesn't bring the cta again
-            if (dd("#submit_number [name='schedule']").val() !='none') {
-                dd("#submit_number [name='schedule']").val("set");
-            };
-        }
-    });
-
-    var active_cta = dd("#cta > [name='active_cta']").val();
-    if (active_cta !='none') {
-        setTimeout(() => {
-            cta(active_cta);
-        }, 1000);
-    }
-
-    dd("#iframe_map").select().src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.0235317057222!2d5.792473513560625!3d5.5635298959662585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1041adb341059367%3A0x85ef7875cfab9aab!2sBlue%20Diamond%20School!5e0!3m2!1sen!2sng!4v1600442938081!5m2!1sen!2sng";
+    // Delay loading of map
+    setTimeout(() => {
+        dd("#iframe_map").select().src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.0235317057222!2d5.792473513560625!3d5.5635298959662585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1041adb341059367%3A0x85ef7875cfab9aab!2sBlue%20Diamond%20School!5e0!3m2!1sen!2sng!4v1600442938081!5m2!1sen!2sng";
+    }, 10000);
+   
     
     // Setting default variables
-    var announcement_has_been_closed = false;
+    // var announcement_has_been_closed = false;
 
     // The next button that changes the slider
     // function change_view(where) {
@@ -107,18 +87,18 @@ window.addEventListener('load', function () {
     window.addEventListener("scroll", displayCta)
 
 
-    function close_announcement() {
+    // function close_announcement() {
 
-        dd("#announcement").fadeOut(500);
-        announcement_has_been_closed = true;
+    //     dd("#announcement").fadeOut(500);
+    //     announcement_has_been_closed = true;
 
-        // The homepage needs to be adjusted if announcement is closed
-        // var top_description = dd("#top_description > div").select();
-        // if (getComputedStyle(top_description).top > "15%") {
-        //     top_description.style.top = "20%";
-        //     dd("#top_description").select().style.height = "700px";
-        // }
-    }
+    //     // The homepage needs to be adjusted if announcement is closed
+    //     // var top_description = dd("#top_description > div").select();
+    //     // if (getComputedStyle(top_description).top > "15%") {
+    //     //     top_description.style.top = "20%";
+    //     //     dd("#top_description").select().style.height = "700px";
+    //     // }
+    // }
 
     // dd_load({
     //     url: "app/index/announcement",

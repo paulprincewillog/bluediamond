@@ -13,7 +13,7 @@
 #cta > div {
     box-shadow: 0px 10px 25px #000;
     border-radius: 20px 20px 0px 20px;
-    background: rgba(0,0,0,0.9);
+    background-color: rgba(0,0,0,0.9);
     color: white;
     overflow: hidden;
     display: none;
@@ -23,6 +23,7 @@
     padding-top: 30px;
     border: 2px solid #333
 }
+
 
 .current_cta {
     display: block !important
@@ -35,7 +36,7 @@
     right: -5px;
 }
 
-#cta_image > img {
+#cta_image img {
     height: 55px;
     width: auto;
     margin-top: 30px;
@@ -86,7 +87,6 @@
     width: 40px;
     height: 40px;
     margin-left: 20px;
-    transform: rotateX(180deg)
 }
 
 #cta_success p {

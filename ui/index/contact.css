@@ -53,7 +53,6 @@
   font-size: 30px;
   border-radius: 50px;
   display: inline-block;
-  cursor: pointer;
   font-weight: normal;
   box-shadow: 0px 5px 20px #2b1d44;
 }
@@ -123,7 +122,10 @@
   padding: 1px 10px 3px 23px;
   border-radius: 50px;
   margin-left: 25px;
-  box-shadow: 0px 10px 25px #000;
+}
+
+#other_contacts .phone_number a:hover {
+  box-shadow: inset 0em 0em 0em 10em rgba(0, 0, 0, 0.3);
 }
 
 #other_contacts .phone_number span {
@@ -236,6 +238,10 @@
   margin-bottom: 10px;
 }
 
+.social_media > a:hover {
+  color: #ddd;
+  border-color: #666;
+}
 .social_media i {
   height: 13px;
   width: 13px;

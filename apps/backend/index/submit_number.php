@@ -6,10 +6,17 @@
     $x = [];
 
     // Check if this person was referred
-    if (isset($_SESSION['referral']) && $_SESSION['referral'] !='') {
-        $referral = $db->sanitize($_SESSION['referral']);
+    if (isset($_SESSION['source_type']) && $_SESSION['source_type'] !='') {
+        $source = $db->sanitize($_SESSION['source_type']);
     } else {
-        $referral = "direct";
+        $source = "direct";
+    }
+
+    // Check details of visior's source
+    if (isset($_SESSION['source_details']) && $_SESSION['source_details'] !='') {
+        $source_details = $db->sanitize($_SESSION['source_details']);
+    } else {
+        $source_details = "";
     }
 
     $full_name = $db->sanitize($_POST['full_name']);
@@ -19,7 +26,7 @@
     if ($db->getUser($phone_number)) {
         $db->sql("UPDATE contacts SET full_name='$full_name', phone_number='$phone_number' WHERE phone_number='$phone_number'");
     } else {
-        $db->sql("INSERT INTO contacts (full_name, phone_number, source, type, schedule) VALUES('$full_name','$phone_number', '$referral','lead','$schedule')");
+        $db->sql("INSERT INTO contacts (full_name, phone_number, source, source_details, type, schedule) VALUES('$full_name','$phone_number', '$source','$source_details','lead','$schedule')");
     }
 
     if ($db->isSuccessful) {

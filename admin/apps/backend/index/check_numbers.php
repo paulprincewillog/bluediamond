@@ -6,7 +6,7 @@
 
     $x = [];
     $extra_sql = "";
-    $_POST['search'] = "Justice";
+    // $_POST['search'] = "Justice";
     
     if (isset($_POST['search'])) {
         $query = $db->sanitize($_POST['search']);
@@ -15,14 +15,23 @@
         $extra_sql =  "WHERE type !='referrer'";
     }
 
-    $db->sql("SELECT * FROM contacts $extra_sql ORDER BY id DESC LIMIT 0, 12");
+    // Add pagination
+    if (isset($_POST['dd_page']) && $_POST['dd_page'] > 1) {
+		$limit = $db->sanitize($_POST['dd_page']);
+		$pagination = " LIMIT $limit, 8";
+	} else {
+        $pagination = " LIMIT 0, 8";
+    }
+    
+    $db->sql("SELECT * FROM contacts $extra_sql ORDER BY id DESC $pagination");
     if ($db->there_is_data()) {
 
         $db->getAllData();
 	    foreach ($db->eachData as $item) {
 
+            $item['source'] = strtolower($item['source']);
             // Get referral details if contact was referred
-            if (strtolower($item['source']) == 'referred') {
+            if ($item['source'] == 'referred') {
                 $referral = $item['source_details'];
                 $db->sql("SELECT * FROM contacts WHERE phone_number='$referral'");
                 $referral = $db->getData();

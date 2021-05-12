@@ -88,6 +88,18 @@ p[dd_display='phone_number'] {
     font-size: 80%;
 }
 
+.source_facebook {
+    background: #005aff !important
+}
+
+.source_referred {
+    background: #06644f !important
+}
+
+.source_google {
+    color: #960e59 !important
+}
+
 .schedule p {
     margin: 0px;
     /* font-weight: bold; */
@@ -112,6 +124,18 @@ p[dd_display='phone_number'] {
 
 .schedule {
     color: #999
+}
+
+[dd_pagination] {
+    text-align: center;
+    width: 100%;
+    border-top: 2px solid #333;
+    padding-top: 20px;
+    margin-top: 0px;
+}
+
+[dd_pagination] button {
+    margin-right: 30px
 }
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 700px) {

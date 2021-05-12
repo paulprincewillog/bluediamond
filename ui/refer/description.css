@@ -31,7 +31,15 @@
 #top_description [name='caption'] {
   width: 50%;
   font-size: 150%;
-  line-height: 150%;
+  line-height: 160%;
+}
+
+#top_description [name='caption'] b {
+  font-weight: bold;
+  border-bottom: 1px solid #999;
+  display: inline-block;
+  padding-bottom: 2px;
+  margin: 1px
 }
 
 #top_description [name='actions'] {

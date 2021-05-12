@@ -11,8 +11,6 @@
     <link rel="icon" href="../favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="../ui/_general/_styles.dd.css?v=<?php echo VERSION ; ?>">
     <link rel="stylesheet" href="ui/<?php echo $page_link; ?>/_styles.dd.css?v=<?php echo VERSION ; ?>">
-    <link href="../_assets/fonts/metropolis/stylesheet.css" rel="stylesheet">
-    <link rel="stylesheet" href="../_assets/icons/pe-icon/styles/pe-icon.css">
 </head>
 <body>
     

@@ -2,6 +2,7 @@
   font-family: 'Metropolis Light', Arial;
   font-weight: 300;
   font-style: normal;
+  transition: box-shadow 0.5s, background-color 0.5s, color 0.5s, border-color 0.5s;
 }
 
 body {
@@ -15,8 +16,12 @@ body {
 
 a {
     text-decoration: none;
-    color:  #673ab7;
+    color: #ab83ef; ;
     cursor: pointer
+}
+
+a:hover {
+  color:#673ab7
 }
 
 h1, h2, h3 {

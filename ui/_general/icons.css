@@ -45,9 +45,9 @@
     background-image: url(../../_assets/icons/pe-icon/close.svg); 
 }
 
-
 .pe-7s-check {
     background-image: url(../../_assets/icons/pe-icon/check.svg); 
+    transform: rotateX(180deg)
 }
 
 

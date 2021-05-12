@@ -118,7 +118,7 @@
 	function loadFooter($link = 'main') {
 		global $path; global $page_link; global $website;
 
-		echo "<script async src='".ROOT_URL."apps/frontend/_lib/dodo.js?v=".VERSION."'></script>";
+		echo "<script async src='".ROOT_URL."apps/frontend/_lib/dodo.min.js?v=".VERSION."'></script>";
 		echo "<script async src='". FRONTEND ."$page_link/_scripts.dd.js?v=".VERSION."'></script>";
 
 		if (!isset($_SERVER['HTTP_DODO'])) {

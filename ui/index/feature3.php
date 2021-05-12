@@ -1,7 +1,12 @@
 <div class="features" id="feature3">
 
     <div class="feature_image">
-        <img src="_assets/images/creche-facilities-in-effurun.jpg"  loading="lazy" width="250" height="160"  alt="Creche facility at blue diamond schools Effurun">
+        <picture>
+                <source srcset="_assets/images/creche-facilities-in-effurun.webp" type="image/webp">
+                <source srcset="_assets/images/creche-facilities-in-effurun.jpg" type="image/jpeg">
+            <img src="_assets/images/creche-facilities-in-effurun.jpg"  loading="lazy" width="250" height="160"  alt="Creche facility at blue diamond schools Effurun">
+        </picture>
+        
     </div>
 
     <div class="each_feature">
